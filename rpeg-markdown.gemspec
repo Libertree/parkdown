@@ -115,7 +115,7 @@ test/MarkdownTest_1.0.3/Tests/Tidyness.text
 bin/rpeg-markdown
 ]
   # = MANIFEST =
-  s.test_files = FileList["test/markdown_test.rb"]
+  s.test_files = ["test/markdown_test.rb"]
   s.extra_rdoc_files = ["LICENSE"]
   s.extensions = ["ext/extconf.rb"]
   s.executables = ["rpeg-markdown"]
