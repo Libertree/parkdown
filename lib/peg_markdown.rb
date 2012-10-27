@@ -31,6 +31,9 @@ class PEGMarkdown
   # Included for compatibility with RedCloth's interface.
   attr_accessor :fold_lines
 
+  # Set true to enable strike-through extension.
+  attr_accessor :strike
+
   # Create a new Markdown processor. The +text+ argument is a string
   # containing Markdown text. Variable other arguments may be supplied to
   # set various processing options:
@@ -42,6 +45,7 @@ class PEGMarkdown
   # * <tt>:filter_html</tt> - Do not output raw HTML included in the
   #   source text.
   # * <tt>:fold_lines</tt> - RedCloth compatible line folding (not used).
+  # * <tt>:strike</tt> - Enable strike-through extension.
   #
   def initialize(text, *extensions)
     @text = text
@@ -49,6 +53,7 @@ class PEGMarkdown
     @notes = false
     @filter_styles = false
     @filter_html = false
+    @strike = false
     extensions.each { |e| send("#{e}=", true) }
   end
 
