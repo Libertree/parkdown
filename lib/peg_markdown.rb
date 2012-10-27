@@ -34,6 +34,9 @@ class PEGMarkdown
   # Set true to enable strike-through extension.
   attr_accessor :strike
 
+  # Set true to enable autolink extension.
+  attr_accessor :autolink
+
   # Create a new Markdown processor. The +text+ argument is a string
   # containing Markdown text. Variable other arguments may be supplied to
   # set various processing options:
@@ -46,6 +49,7 @@ class PEGMarkdown
   #   source text.
   # * <tt>:fold_lines</tt> - RedCloth compatible line folding (not used).
   # * <tt>:strike</tt> - Enable strike-through extension.
+  # * <tt>:autolink</tt> - Enable autolinking of bare URLs.
   #
   def initialize(text, *extensions)
     @text = text
@@ -54,6 +58,7 @@ class PEGMarkdown
     @filter_styles = false
     @filter_html = false
     @strike = false
+    @autolink = false
     extensions.each { |e| send("#{e}=", true) }
   end
 
