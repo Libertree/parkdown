@@ -37,6 +37,9 @@ class PEGMarkdown
   # Set true to enable autolink extension.
   attr_accessor :autolink
 
+  # Set true to enable hard wrap extension.
+  attr_accessor :hard_wrap
+
   # Create a new Markdown processor. The +text+ argument is a string
   # containing Markdown text. Variable other arguments may be supplied to
   # set various processing options:
@@ -50,6 +53,7 @@ class PEGMarkdown
   # * <tt>:fold_lines</tt> - RedCloth compatible line folding (not used).
   # * <tt>:strike</tt> - Enable strike-through extension.
   # * <tt>:autolink</tt> - Enable autolinking of bare URLs.
+  # * <tt>:hard_wrap</tt> - Insert line breaks inside paragraphs.
   #
   def initialize(text, *extensions)
     @text = text
@@ -59,6 +63,7 @@ class PEGMarkdown
     @filter_html = false
     @strike = false
     @autolink = false
+    @hard_wrap = false
     extensions.each { |e| send("#{e}=", true) }
   end
 
