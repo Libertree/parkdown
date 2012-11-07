@@ -27,6 +27,8 @@ rb_markdown_to_html(int argc, VALUE *argv, VALUE self)
         extensions = extensions | EXT_AUTOLINK ;
     if ( rb_funcall(self, rb_intern("hard_wrap"), 0) == Qtrue )
         extensions = extensions | EXT_HARD_WRAP ;
+    if ( rb_funcall(self, rb_intern("no_images"), 0) == Qtrue )
+        extensions = extensions | EXT_NO_IMAGES ;
 
     char *html = markdown_to_string(ptext, extensions, HTML_FORMAT);
     VALUE result = rb_str_new2(html);

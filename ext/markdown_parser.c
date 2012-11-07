@@ -817,7 +817,9 @@ YY_ACTION(void) yy_1_ReferenceLinkDouble(char *yytext, int yyleng)
 YY_ACTION(void) yy_1_Image(char *yytext, int yyleng)
 {
   yyprintf((stderr, "do yy_1_Image\n"));
-   if (yy->key == LINK) {
+   if (extension(EXT_NO_IMAGES)) {
+              yy->key = LINK;
+          } else if (yy->key == LINK) {
               yy->key = IMAGE;
           } else {
               element *result;
