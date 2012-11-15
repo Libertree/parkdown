@@ -6324,7 +6324,7 @@ YY_RULE(int) yy_Spacechar(yycontext *ctx)
   yyprintf((stderr, "%s\n", "Spacechar"));
   {  int yypos1423= ctx->pos, yythunkpos1423= ctx->thunkpos;  if (!yymatchChar(ctx, ' ')) goto l1424;  goto l1423;
   l1424:;	  ctx->pos= yypos1423; ctx->thunkpos= yythunkpos1423;  if (!yymatchChar(ctx, '\t')) goto l1425;  goto l1423;
-  l1425:;	  ctx->pos= yypos1423; ctx->thunkpos= yythunkpos1423;  if (!yymatchString(ctx, "\240")) goto l1422;
+  l1425:;	  ctx->pos= yypos1423; ctx->thunkpos= yythunkpos1423;  if (!yymatchString(ctx, "\302")) goto l1422;  if (!yymatchString(ctx, "\240")) goto l1422;
   }
   l1423:;	
   yyprintf((stderr, "  ok   %s @ %s\n", "Spacechar", ctx->buf+ctx->pos));
