@@ -22,7 +22,7 @@
 #include <assert.h>
 #include <glib.h>
 #include "markdown_peg.h"
-#include "odf.c"
+#include "odf.h"
 
 static int extensions;
 static int odf_type = 0;
@@ -63,7 +63,7 @@ static void pad(GString *out, int num) {
 }
 
 /* determine whether a certain element is contained within a given list */
-bool list_contains_key(element *list, int key) {
+static bool list_contains_key(element *list, int key) {
     element *step = NULL;
 
     step = list;
@@ -105,7 +105,7 @@ static void print_html_string(GString *out, char *str, bool obfuscate) {
             g_string_append_printf(out, "&quot;");
             break;
         default:
-            if (obfuscate) {
+	  if (obfuscate && ((int) *str < 128) && ((int) *str >= 0)){
                 if (rand() % 2 == 0)
                     g_string_append_printf(out, "&#%d;", (int) *str);
                 else
@@ -201,6 +201,40 @@ static void print_html_element(GString *out, element *elt, bool obfuscate) {
             g_string_append_printf(out, "\"");
         }
         g_string_append_printf(out, " />");
+        break;
+    case AUDIO:
+        pad(out, 2);
+        g_string_append_printf(out, "<audio controls=\"true\">\n");
+        g_string_append_printf(out, "  <source src=\"");
+        print_html_string(out, elt->contents.media->source1, obfuscate);
+        g_string_append_printf(out, "\" />\n");
+        if (strcmp(elt->contents.media->source2, "")) {
+            g_string_append_printf(out, "  <source src=\"");
+            print_html_string(out, elt->contents.media->source2, obfuscate);
+            g_string_append_printf(out, "\" />\n");
+        }
+        g_string_append_printf(out, "</audio>\n");
+        g_string_append_printf(out, "<div class=\"audio-file-title\">");
+        print_html_element_list(out, elt->contents.link->label, obfuscate);
+        g_string_append_printf(out, "</div>");
+        padded = 0;
+        break;
+    case VIDEO:
+        pad(out, 2);
+        g_string_append_printf(out, "<video controls=\"true\">\n");
+        g_string_append_printf(out, "  <source src=\"");
+        print_html_string(out, elt->contents.media->source1, obfuscate);
+        g_string_append_printf(out, "\" />\n");
+        if (strcmp(elt->contents.media->source2, "")) {
+            g_string_append_printf(out, "  <source src=\"");
+            print_html_string(out, elt->contents.media->source2, obfuscate);
+            g_string_append_printf(out, "\" />\n");
+        }
+        g_string_append_printf(out, "</video>\n");
+        g_string_append_printf(out, "<div class=\"video-file-title\">");
+        print_html_element_list(out, elt->contents.link->label, obfuscate);
+        g_string_append_printf(out, "</div>");
+        padded = 0;
         break;
     case EMPH:
         g_string_append_printf(out, "<em>");
@@ -439,6 +473,17 @@ static void print_latex_element(GString *out, element *elt) {
     case IMAGE:
         g_string_append_printf(out, "\\includegraphics{%s}", elt->contents.link->url);
         break;
+    case AUDIO:
+        g_string_append_printf(out, "\n\n[AUDIO: {%s}]", elt->contents.media->source1);
+        padded = 0;
+        /* not supported */
+        break;
+    case VIDEO:
+        pad(out, 2);
+        g_string_append_printf(out, "\n\n[VIDEO: {%s}]", elt->contents.media->source1);
+        padded = 0;
+        /* not supported */
+        break;
     case EMPH:
         g_string_append_printf(out, "\\emph{");
         print_latex_element_list(out, elt->children);
@@ -446,6 +491,11 @@ static void print_latex_element(GString *out, element *elt) {
         break;
     case STRONG:
         g_string_append_printf(out, "\\textbf{");
+        print_latex_element_list(out, elt->children);
+        g_string_append_printf(out, "}");
+        break;
+    case STRIKE:
+        g_string_append_printf(out, "\\sout{");
         print_latex_element_list(out, elt->children);
         g_string_append_printf(out, "}");
         break;
@@ -563,6 +613,12 @@ static bool in_list_item = false; /* True if we're parsing contents of a list it
 
 /* print_groff_string - print string, escaping for groff */
 static void print_groff_string(GString *out, char *str) {
+    /* escape dots if it is the first character */
+    if (*str == '.') {
+        g_string_append_printf(out, "\\[char46]");
+        str++;
+    }
+
     while (*str != '\0') {
         switch (*str) {
         case '\\':
@@ -645,6 +701,22 @@ static void print_groff_mm_element(GString *out, element *elt, int count) {
         padded = 0;
         /* not supported */
         break;
+    case AUDIO:
+        pad(out, 2);
+        g_string_append_printf(out, "[AUDIO: ");
+        print_groff_string(out, elt->contents.media->source1);
+        g_string_append_printf(out, "]");
+        padded = 0;
+        /* not supported */
+        break;
+    case VIDEO:
+        pad(out, 2);
+        g_string_append_printf(out, "[VIDEO: ");
+        print_groff_string(out, elt->contents.media->source1);
+        g_string_append_printf(out, "]");
+        padded = 0;
+        /* not supported */
+        break;
     case EMPH:
         g_string_append_printf(out, "\\fI");
         print_groff_mm_element_list(out, elt->children);
@@ -656,6 +728,12 @@ static void print_groff_mm_element(GString *out, element *elt, int count) {
         print_groff_mm_element_list(out, elt->children);
         g_string_append_printf(out, "\\fR");
         padded = 0;
+        break;
+    case STRIKE:
+        g_string_append_printf(out, "\\c\n.ST \"");
+        print_groff_mm_element_list(out, elt->children);
+        g_string_append_printf(out, "\"");
+        pad(out, 1);
         break;
     case LIST:
         print_groff_mm_element_list(out, elt->children);
@@ -870,7 +948,7 @@ static void print_odf_string(GString *out, char *str) {
 }
 
 /* print_odf_element_list - print an element list as ODF */
-void print_odf_element_list(GString *out, element *list) {
+static void print_odf_element_list(GString *out, element *list) {
     while (list != NULL) {
         print_odf_element(out, list);
         list = list->next;
@@ -878,7 +956,7 @@ void print_odf_element_list(GString *out, element *list) {
 }
 
 /* print_odf_element - print an element as ODF */
-void print_odf_element(GString *out, element *elt) {
+static void print_odf_element(GString *out, element *elt) {
     int lev;
     int old_type = 0;
     switch (elt->key) {
@@ -950,6 +1028,12 @@ void print_odf_element(GString *out, element *elt) {
     case STRONG:
         g_string_append_printf(out,
             "<text:span text:style-name=\"MMD-Bold\">");
+        print_odf_element_list(out, elt->children);
+        g_string_append_printf(out, "</text:span>");
+        break;
+    case STRIKE:
+        g_string_append_printf(out,
+            "<text:span text:style-name=\"StrikeThrough\">");
         print_odf_element_list(out, elt->children);
         g_string_append_printf(out, "</text:span>");
         break;
@@ -1108,9 +1192,16 @@ void print_element_list(GString *out, element *elt, int format, int exts) {
         }
         break;
     case LATEX_FORMAT:
+        if (extensions & EXT_STRIKE) {
+          g_string_append_printf(out, "\\usepackage{ulem}\n");
+        }
         print_latex_element_list(out, elt);
         break;
     case GROFF_MM_FORMAT:
+        if (extensions & EXT_STRIKE) {
+          g_string_append_printf(out,
+              ".de ST\n.nr width \\w'\\\\$1'\n\\Z@\\v'-.25m'\\l'\\\\n[width]u'@\\\\$1\\c\n..\n.\n");
+        }
         print_groff_mm_element_list(out, elt);
         break;
     case ODF_FORMAT:

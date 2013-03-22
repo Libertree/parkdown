@@ -66,7 +66,8 @@ task :gather => 'submodule:exist' do |t|
   files =
     FileList[
       'peg-markdown/markdown_{peg.h,parser.c,output.c,lib.c,lib.h}',
-      'peg-markdown/{utility,parsing}_functions.c'
+      'peg-markdown/{utility,parsing}_functions.c',
+      'peg-markdown/{utility,parsing}_functions.h'
     ]
   cp files, 'ext/',
     :preserve => true,
