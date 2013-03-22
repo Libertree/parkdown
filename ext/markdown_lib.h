@@ -6,15 +6,15 @@
 #include <glib.h>
 
 enum markdown_extensions {
-    EXT_SMART            = 0x01,
-    EXT_NOTES            = 0x02,
-    EXT_FILTER_HTML      = 0x04,
-    EXT_FILTER_STYLES    = 0x08,
-    EXT_STRIKE           = 0x10,
-    EXT_AUTOLINK         = 0x20,
-    EXT_HARD_WRAP        = 0x40,
-    EXT_NO_IMAGES        = 0x80,
-    EXT_MEDIA            = 0xA0
+    EXT_SMART            = 0x001,
+    EXT_NOTES            = 0x002,
+    EXT_FILTER_HTML      = 0x004,
+    EXT_FILTER_STYLES    = 0x008,
+    EXT_STRIKE           = 0x010,
+    EXT_AUTOLINK         = 0x020,
+    EXT_HARD_WRAP        = 0x040,
+    EXT_NO_IMAGES        = 0x080,
+    EXT_MEDIA            = 0x100
 };
 
 enum markdown_formats {
