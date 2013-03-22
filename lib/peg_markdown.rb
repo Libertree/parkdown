@@ -43,6 +43,9 @@ class PEGMarkdown
   # Set true to disable rendering of images.
   attr_accessor :no_images
 
+  # Set true to enable audio/video extension.
+  attr_accessor :media
+
   # Create a new Markdown processor. The +text+ argument is a string
   # containing Markdown text. Variable other arguments may be supplied to
   # set various processing options:
@@ -58,6 +61,7 @@ class PEGMarkdown
   # * <tt>:autolink</tt> - Enable autolinking of bare URLs.
   # * <tt>:hard_wrap</tt> - Insert line breaks inside paragraphs.
   # * <tt>:no_images</tt> - Treat image links as if they were plain links.
+  # * <tt>:media</tt> - Replace audio/video links with HTML5 audio/video objects.
   #
   def initialize(text, *extensions)
     @text = text
@@ -69,6 +73,7 @@ class PEGMarkdown
     @autolink = false
     @hard_wrap = false
     @no_images = false
+    @media = false
     extensions.each { |e| send("#{e}=", true) }
   end
 
