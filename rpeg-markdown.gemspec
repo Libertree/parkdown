@@ -1,7 +1,7 @@
 # encoding: utf-8
 Gem::Specification.new do |s|
   s.name = 'rpeg-markdown'
-  s.version = '1.4.7'
+  s.version = '1.4.8'
   s.summary = "Fast Markdown implementation"
   s.description = ''
   s.date = '2014-02-02'
