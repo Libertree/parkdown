@@ -1,13 +1,13 @@
 # encoding: utf-8
 Gem::Specification.new do |s|
   s.name = 'rpeg-markdown'
-  s.version = '1.4.6'
+  s.version = '1.4.7'
   s.summary = "Fast Markdown implementation"
   s.description = ''
-  s.date = '2010-01-15'
+  s.date = '2014-02-02'
   s.email = 'r@tomayko.com'
-  s.homepage = 'http://github.com/rtomayko/rpeg-markdown'
-  s.authors = ["Ryan Tomayko"]
+  s.homepage = 'http://github.com/rekado/rpeg-markdown'
+  s.authors = ["Ryan Tomayko", "Rekado"]
   s.has_rdoc = true
   # = MANIFEST =
   s.files = %w[
