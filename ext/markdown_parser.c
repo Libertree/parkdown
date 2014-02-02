@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define YYRULECOUNT 244
+#define YYRULECOUNT 245
 
 /**********************************************************************
 
@@ -291,243 +291,244 @@ YY_LOCAL(void) yySet(yycontext *ctx, char *text, int count)   { ctx->val[count]=
 
 #define	YYACCEPT	yyAccept(ctx, yythunkpos0)
 
-YY_RULE(int) yy_Notes(yycontext *ctx); /* 244 */
-YY_RULE(int) yy_RawNoteBlock(yycontext *ctx); /* 243 */
-YY_RULE(int) yy_RawNoteReference(yycontext *ctx); /* 242 */
-YY_RULE(int) yy_DoubleQuoteEnd(yycontext *ctx); /* 241 */
-YY_RULE(int) yy_DoubleQuoteStart(yycontext *ctx); /* 240 */
-YY_RULE(int) yy_SingleQuoteEnd(yycontext *ctx); /* 239 */
-YY_RULE(int) yy_SingleQuoteStart(yycontext *ctx); /* 238 */
-YY_RULE(int) yy_EnDash(yycontext *ctx); /* 237 */
-YY_RULE(int) yy_EmDash(yycontext *ctx); /* 236 */
-YY_RULE(int) yy_Apostrophe(yycontext *ctx); /* 235 */
-YY_RULE(int) yy_DoubleQuoted(yycontext *ctx); /* 234 */
-YY_RULE(int) yy_SingleQuoted(yycontext *ctx); /* 233 */
-YY_RULE(int) yy_Dash(yycontext *ctx); /* 232 */
-YY_RULE(int) yy_Ellipsis(yycontext *ctx); /* 231 */
-YY_RULE(int) yy_Digit(yycontext *ctx); /* 230 */
-YY_RULE(int) yy_ExtendedSpecialChar(yycontext *ctx); /* 229 */
-YY_RULE(int) yy_AlphanumericAscii(yycontext *ctx); /* 228 */
-YY_RULE(int) yy_Quoted(yycontext *ctx); /* 227 */
-YY_RULE(int) yy_HtmlTag(yycontext *ctx); /* 226 */
-YY_RULE(int) yy_Ticks5(yycontext *ctx); /* 225 */
-YY_RULE(int) yy_Ticks4(yycontext *ctx); /* 224 */
-YY_RULE(int) yy_Ticks3(yycontext *ctx); /* 223 */
-YY_RULE(int) yy_Ticks2(yycontext *ctx); /* 222 */
-YY_RULE(int) yy_Ticks1(yycontext *ctx); /* 221 */
-YY_RULE(int) yy_SkipBlock(yycontext *ctx); /* 220 */
-YY_RULE(int) yy_References(yycontext *ctx); /* 219 */
-YY_RULE(int) yy_EmptyTitle(yycontext *ctx); /* 218 */
-YY_RULE(int) yy_RefTitleParens(yycontext *ctx); /* 217 */
-YY_RULE(int) yy_RefTitleDouble(yycontext *ctx); /* 216 */
-YY_RULE(int) yy_RefTitleSingle(yycontext *ctx); /* 215 */
-YY_RULE(int) yy_RefTitle(yycontext *ctx); /* 214 */
-YY_RULE(int) yy_RefSrc(yycontext *ctx); /* 213 */
-YY_RULE(int) yy_AutoLinkEmail(yycontext *ctx); /* 212 */
-YY_RULE(int) yy_AutoLinkUrl(yycontext *ctx); /* 211 */
-YY_RULE(int) yy_TitleDouble(yycontext *ctx); /* 210 */
-YY_RULE(int) yy_TitleSingle(yycontext *ctx); /* 209 */
-YY_RULE(int) yy_Nonspacechar(yycontext *ctx); /* 208 */
-YY_RULE(int) yy_SourceContents(yycontext *ctx); /* 207 */
-YY_RULE(int) yy_Title(yycontext *ctx); /* 206 */
-YY_RULE(int) yy_ReferenceLinkSingle(yycontext *ctx); /* 205 */
-YY_RULE(int) yy_ReferenceLinkDouble(yycontext *ctx); /* 204 */
-YY_RULE(int) yy_AutoLink(yycontext *ctx); /* 203 */
-YY_RULE(int) yy_Source(yycontext *ctx); /* 202 */
-YY_RULE(int) yy_Label(yycontext *ctx); /* 201 */
-YY_RULE(int) yy_MediaLink(yycontext *ctx); /* 200 */
-YY_RULE(int) yy_ReferenceLink(yycontext *ctx); /* 199 */
-YY_RULE(int) yy_ExplicitLink(yycontext *ctx); /* 198 */
-YY_RULE(int) yy_StrongUl(yycontext *ctx); /* 197 */
-YY_RULE(int) yy_StrongStar(yycontext *ctx); /* 196 */
-YY_RULE(int) yy_Whitespace(yycontext *ctx); /* 195 */
-YY_RULE(int) yy_EmphUl(yycontext *ctx); /* 194 */
-YY_RULE(int) yy_EmphStar(yycontext *ctx); /* 193 */
-YY_RULE(int) yy_StarLine(yycontext *ctx); /* 192 */
-YY_RULE(int) yy_UlLine(yycontext *ctx); /* 191 */
-YY_RULE(int) yy_SpecialChar(yycontext *ctx); /* 190 */
-YY_RULE(int) yy_Eof(yycontext *ctx); /* 189 */
-YY_RULE(int) yy_NormalEndline(yycontext *ctx); /* 188 */
-YY_RULE(int) yy_TerminalEndline(yycontext *ctx); /* 187 */
-YY_RULE(int) yy_LineBreak(yycontext *ctx); /* 186 */
-YY_RULE(int) yy_CharEntity(yycontext *ctx); /* 185 */
-YY_RULE(int) yy_DecEntity(yycontext *ctx); /* 184 */
-YY_RULE(int) yy_HexEntity(yycontext *ctx); /* 183 */
-YY_RULE(int) yy_AposChunk(yycontext *ctx); /* 182 */
-YY_RULE(int) yy_Alphanumeric(yycontext *ctx); /* 181 */
-YY_RULE(int) yy_StrChunk(yycontext *ctx); /* 180 */
-YY_RULE(int) yy_NormalChar(yycontext *ctx); /* 179 */
-YY_RULE(int) yy_Symbol(yycontext *ctx); /* 178 */
-YY_RULE(int) yy_Smart(yycontext *ctx); /* 177 */
-YY_RULE(int) yy_EscapedChar(yycontext *ctx); /* 176 */
-YY_RULE(int) yy_Entity(yycontext *ctx); /* 175 */
-YY_RULE(int) yy_RawHtml(yycontext *ctx); /* 174 */
-YY_RULE(int) yy_Code(yycontext *ctx); /* 173 */
-YY_RULE(int) yy_InlineNote(yycontext *ctx); /* 172 */
-YY_RULE(int) yy_NoteReference(yycontext *ctx); /* 171 */
-YY_RULE(int) yy_Str(yycontext *ctx); /* 170 */
-YY_RULE(int) yy_Link(yycontext *ctx); /* 169 */
-YY_RULE(int) yy_Image(yycontext *ctx); /* 168 */
-YY_RULE(int) yy_Strike(yycontext *ctx); /* 167 */
-YY_RULE(int) yy_Emph(yycontext *ctx); /* 166 */
-YY_RULE(int) yy_Strong(yycontext *ctx); /* 165 */
-YY_RULE(int) yy_Space(yycontext *ctx); /* 164 */
-YY_RULE(int) yy_UlOrStarLine(yycontext *ctx); /* 163 */
-YY_RULE(int) yy_InStyleTags(yycontext *ctx); /* 162 */
-YY_RULE(int) yy_StyleClose(yycontext *ctx); /* 161 */
-YY_RULE(int) yy_StyleOpen(yycontext *ctx); /* 160 */
-YY_RULE(int) yy_HtmlBlockType(yycontext *ctx); /* 159 */
-YY_RULE(int) yy_HtmlBlockSelfClosing(yycontext *ctx); /* 158 */
-YY_RULE(int) yy_HtmlComment(yycontext *ctx); /* 157 */
-YY_RULE(int) yy_HtmlBlockInTags(yycontext *ctx); /* 156 */
-YY_RULE(int) yy_HtmlBlockHead(yycontext *ctx); /* 155 */
-YY_RULE(int) yy_HtmlBlockCloseHead(yycontext *ctx); /* 154 */
-YY_RULE(int) yy_HtmlBlockOpenHead(yycontext *ctx); /* 153 */
-YY_RULE(int) yy_HtmlBlockScript(yycontext *ctx); /* 152 */
-YY_RULE(int) yy_HtmlBlockCloseScript(yycontext *ctx); /* 151 */
-YY_RULE(int) yy_HtmlBlockOpenScript(yycontext *ctx); /* 150 */
-YY_RULE(int) yy_HtmlBlockTr(yycontext *ctx); /* 149 */
-YY_RULE(int) yy_HtmlBlockCloseTr(yycontext *ctx); /* 148 */
-YY_RULE(int) yy_HtmlBlockOpenTr(yycontext *ctx); /* 147 */
-YY_RULE(int) yy_HtmlBlockThead(yycontext *ctx); /* 146 */
-YY_RULE(int) yy_HtmlBlockCloseThead(yycontext *ctx); /* 145 */
-YY_RULE(int) yy_HtmlBlockOpenThead(yycontext *ctx); /* 144 */
-YY_RULE(int) yy_HtmlBlockTh(yycontext *ctx); /* 143 */
-YY_RULE(int) yy_HtmlBlockCloseTh(yycontext *ctx); /* 142 */
-YY_RULE(int) yy_HtmlBlockOpenTh(yycontext *ctx); /* 141 */
-YY_RULE(int) yy_HtmlBlockTfoot(yycontext *ctx); /* 140 */
-YY_RULE(int) yy_HtmlBlockCloseTfoot(yycontext *ctx); /* 139 */
-YY_RULE(int) yy_HtmlBlockOpenTfoot(yycontext *ctx); /* 138 */
-YY_RULE(int) yy_HtmlBlockTd(yycontext *ctx); /* 137 */
-YY_RULE(int) yy_HtmlBlockCloseTd(yycontext *ctx); /* 136 */
-YY_RULE(int) yy_HtmlBlockOpenTd(yycontext *ctx); /* 135 */
-YY_RULE(int) yy_HtmlBlockTbody(yycontext *ctx); /* 134 */
-YY_RULE(int) yy_HtmlBlockCloseTbody(yycontext *ctx); /* 133 */
-YY_RULE(int) yy_HtmlBlockOpenTbody(yycontext *ctx); /* 132 */
-YY_RULE(int) yy_HtmlBlockLi(yycontext *ctx); /* 131 */
-YY_RULE(int) yy_HtmlBlockCloseLi(yycontext *ctx); /* 130 */
-YY_RULE(int) yy_HtmlBlockOpenLi(yycontext *ctx); /* 129 */
-YY_RULE(int) yy_HtmlBlockFrameset(yycontext *ctx); /* 128 */
-YY_RULE(int) yy_HtmlBlockCloseFrameset(yycontext *ctx); /* 127 */
-YY_RULE(int) yy_HtmlBlockOpenFrameset(yycontext *ctx); /* 126 */
-YY_RULE(int) yy_HtmlBlockDt(yycontext *ctx); /* 125 */
-YY_RULE(int) yy_HtmlBlockCloseDt(yycontext *ctx); /* 124 */
-YY_RULE(int) yy_HtmlBlockOpenDt(yycontext *ctx); /* 123 */
-YY_RULE(int) yy_HtmlBlockDd(yycontext *ctx); /* 122 */
-YY_RULE(int) yy_HtmlBlockCloseDd(yycontext *ctx); /* 121 */
-YY_RULE(int) yy_HtmlBlockOpenDd(yycontext *ctx); /* 120 */
-YY_RULE(int) yy_HtmlBlockUl(yycontext *ctx); /* 119 */
-YY_RULE(int) yy_HtmlBlockCloseUl(yycontext *ctx); /* 118 */
-YY_RULE(int) yy_HtmlBlockOpenUl(yycontext *ctx); /* 117 */
-YY_RULE(int) yy_HtmlBlockTable(yycontext *ctx); /* 116 */
-YY_RULE(int) yy_HtmlBlockCloseTable(yycontext *ctx); /* 115 */
-YY_RULE(int) yy_HtmlBlockOpenTable(yycontext *ctx); /* 114 */
-YY_RULE(int) yy_HtmlBlockPre(yycontext *ctx); /* 113 */
-YY_RULE(int) yy_HtmlBlockClosePre(yycontext *ctx); /* 112 */
-YY_RULE(int) yy_HtmlBlockOpenPre(yycontext *ctx); /* 111 */
-YY_RULE(int) yy_HtmlBlockP(yycontext *ctx); /* 110 */
-YY_RULE(int) yy_HtmlBlockCloseP(yycontext *ctx); /* 109 */
-YY_RULE(int) yy_HtmlBlockOpenP(yycontext *ctx); /* 108 */
-YY_RULE(int) yy_HtmlBlockOl(yycontext *ctx); /* 107 */
-YY_RULE(int) yy_HtmlBlockCloseOl(yycontext *ctx); /* 106 */
-YY_RULE(int) yy_HtmlBlockOpenOl(yycontext *ctx); /* 105 */
-YY_RULE(int) yy_HtmlBlockNoscript(yycontext *ctx); /* 104 */
-YY_RULE(int) yy_HtmlBlockCloseNoscript(yycontext *ctx); /* 103 */
-YY_RULE(int) yy_HtmlBlockOpenNoscript(yycontext *ctx); /* 102 */
-YY_RULE(int) yy_HtmlBlockNoframes(yycontext *ctx); /* 101 */
-YY_RULE(int) yy_HtmlBlockCloseNoframes(yycontext *ctx); /* 100 */
-YY_RULE(int) yy_HtmlBlockOpenNoframes(yycontext *ctx); /* 99 */
-YY_RULE(int) yy_HtmlBlockMenu(yycontext *ctx); /* 98 */
-YY_RULE(int) yy_HtmlBlockCloseMenu(yycontext *ctx); /* 97 */
-YY_RULE(int) yy_HtmlBlockOpenMenu(yycontext *ctx); /* 96 */
-YY_RULE(int) yy_HtmlBlockH6(yycontext *ctx); /* 95 */
-YY_RULE(int) yy_HtmlBlockCloseH6(yycontext *ctx); /* 94 */
-YY_RULE(int) yy_HtmlBlockOpenH6(yycontext *ctx); /* 93 */
-YY_RULE(int) yy_HtmlBlockH5(yycontext *ctx); /* 92 */
-YY_RULE(int) yy_HtmlBlockCloseH5(yycontext *ctx); /* 91 */
-YY_RULE(int) yy_HtmlBlockOpenH5(yycontext *ctx); /* 90 */
-YY_RULE(int) yy_HtmlBlockH4(yycontext *ctx); /* 89 */
-YY_RULE(int) yy_HtmlBlockCloseH4(yycontext *ctx); /* 88 */
-YY_RULE(int) yy_HtmlBlockOpenH4(yycontext *ctx); /* 87 */
-YY_RULE(int) yy_HtmlBlockH3(yycontext *ctx); /* 86 */
-YY_RULE(int) yy_HtmlBlockCloseH3(yycontext *ctx); /* 85 */
-YY_RULE(int) yy_HtmlBlockOpenH3(yycontext *ctx); /* 84 */
-YY_RULE(int) yy_HtmlBlockH2(yycontext *ctx); /* 83 */
-YY_RULE(int) yy_HtmlBlockCloseH2(yycontext *ctx); /* 82 */
-YY_RULE(int) yy_HtmlBlockOpenH2(yycontext *ctx); /* 81 */
-YY_RULE(int) yy_HtmlBlockH1(yycontext *ctx); /* 80 */
-YY_RULE(int) yy_HtmlBlockCloseH1(yycontext *ctx); /* 79 */
-YY_RULE(int) yy_HtmlBlockOpenH1(yycontext *ctx); /* 78 */
-YY_RULE(int) yy_HtmlBlockForm(yycontext *ctx); /* 77 */
-YY_RULE(int) yy_HtmlBlockCloseForm(yycontext *ctx); /* 76 */
-YY_RULE(int) yy_HtmlBlockOpenForm(yycontext *ctx); /* 75 */
-YY_RULE(int) yy_HtmlBlockFieldset(yycontext *ctx); /* 74 */
-YY_RULE(int) yy_HtmlBlockCloseFieldset(yycontext *ctx); /* 73 */
-YY_RULE(int) yy_HtmlBlockOpenFieldset(yycontext *ctx); /* 72 */
-YY_RULE(int) yy_HtmlBlockDl(yycontext *ctx); /* 71 */
-YY_RULE(int) yy_HtmlBlockCloseDl(yycontext *ctx); /* 70 */
-YY_RULE(int) yy_HtmlBlockOpenDl(yycontext *ctx); /* 69 */
-YY_RULE(int) yy_HtmlBlockDiv(yycontext *ctx); /* 68 */
-YY_RULE(int) yy_HtmlBlockCloseDiv(yycontext *ctx); /* 67 */
-YY_RULE(int) yy_HtmlBlockOpenDiv(yycontext *ctx); /* 66 */
-YY_RULE(int) yy_HtmlBlockDir(yycontext *ctx); /* 65 */
-YY_RULE(int) yy_HtmlBlockCloseDir(yycontext *ctx); /* 64 */
-YY_RULE(int) yy_HtmlBlockOpenDir(yycontext *ctx); /* 63 */
-YY_RULE(int) yy_HtmlBlockCenter(yycontext *ctx); /* 62 */
-YY_RULE(int) yy_HtmlBlockCloseCenter(yycontext *ctx); /* 61 */
-YY_RULE(int) yy_HtmlBlockOpenCenter(yycontext *ctx); /* 60 */
-YY_RULE(int) yy_HtmlBlockBlockquote(yycontext *ctx); /* 59 */
-YY_RULE(int) yy_HtmlBlockCloseBlockquote(yycontext *ctx); /* 58 */
-YY_RULE(int) yy_HtmlBlockOpenBlockquote(yycontext *ctx); /* 57 */
-YY_RULE(int) yy_HtmlBlockAddress(yycontext *ctx); /* 56 */
-YY_RULE(int) yy_HtmlBlockCloseAddress(yycontext *ctx); /* 55 */
-YY_RULE(int) yy_HtmlAttribute(yycontext *ctx); /* 54 */
-YY_RULE(int) yy_Spnl(yycontext *ctx); /* 53 */
-YY_RULE(int) yy_HtmlBlockOpenAddress(yycontext *ctx); /* 52 */
-YY_RULE(int) yy_OptionallyIndentedLine(yycontext *ctx); /* 51 */
-YY_RULE(int) yy_Indent(yycontext *ctx); /* 50 */
-YY_RULE(int) yy_ListBlockLine(yycontext *ctx); /* 49 */
-YY_RULE(int) yy_ListContinuationBlock(yycontext *ctx); /* 48 */
-YY_RULE(int) yy_ListBlock(yycontext *ctx); /* 47 */
-YY_RULE(int) yy_ListItem(yycontext *ctx); /* 46 */
-YY_RULE(int) yy_Enumerator(yycontext *ctx); /* 45 */
-YY_RULE(int) yy_ListItemTight(yycontext *ctx); /* 44 */
-YY_RULE(int) yy_ListLoose(yycontext *ctx); /* 43 */
-YY_RULE(int) yy_ListTight(yycontext *ctx); /* 42 */
-YY_RULE(int) yy_Bullet(yycontext *ctx); /* 41 */
-YY_RULE(int) yy_VerbatimChunk(yycontext *ctx); /* 40 */
-YY_RULE(int) yy_IndentedLine(yycontext *ctx); /* 39 */
-YY_RULE(int) yy_NonblankIndentedLine(yycontext *ctx); /* 38 */
-YY_RULE(int) yy_Line(yycontext *ctx); /* 37 */
-YY_RULE(int) yy_BlockQuoteRaw(yycontext *ctx); /* 36 */
-YY_RULE(int) yy_Endline(yycontext *ctx); /* 35 */
-YY_RULE(int) yy_RawLine(yycontext *ctx); /* 34 */
-YY_RULE(int) yy_SetextBottom2(yycontext *ctx); /* 33 */
-YY_RULE(int) yy_SetextBottom1(yycontext *ctx); /* 32 */
-YY_RULE(int) yy_SetextHeading2(yycontext *ctx); /* 31 */
-YY_RULE(int) yy_SetextHeading1(yycontext *ctx); /* 30 */
-YY_RULE(int) yy_SetextHeading(yycontext *ctx); /* 29 */
+YY_RULE(int) yy_Notes(yycontext *ctx); /* 245 */
+YY_RULE(int) yy_RawNoteBlock(yycontext *ctx); /* 244 */
+YY_RULE(int) yy_RawNoteReference(yycontext *ctx); /* 243 */
+YY_RULE(int) yy_DoubleQuoteEnd(yycontext *ctx); /* 242 */
+YY_RULE(int) yy_DoubleQuoteStart(yycontext *ctx); /* 241 */
+YY_RULE(int) yy_SingleQuoteEnd(yycontext *ctx); /* 240 */
+YY_RULE(int) yy_SingleQuoteStart(yycontext *ctx); /* 239 */
+YY_RULE(int) yy_EnDash(yycontext *ctx); /* 238 */
+YY_RULE(int) yy_EmDash(yycontext *ctx); /* 237 */
+YY_RULE(int) yy_Apostrophe(yycontext *ctx); /* 236 */
+YY_RULE(int) yy_DoubleQuoted(yycontext *ctx); /* 235 */
+YY_RULE(int) yy_SingleQuoted(yycontext *ctx); /* 234 */
+YY_RULE(int) yy_Dash(yycontext *ctx); /* 233 */
+YY_RULE(int) yy_Ellipsis(yycontext *ctx); /* 232 */
+YY_RULE(int) yy_Digit(yycontext *ctx); /* 231 */
+YY_RULE(int) yy_ExtendedSpecialChar(yycontext *ctx); /* 230 */
+YY_RULE(int) yy_AlphanumericAscii(yycontext *ctx); /* 229 */
+YY_RULE(int) yy_Quoted(yycontext *ctx); /* 228 */
+YY_RULE(int) yy_HtmlTag(yycontext *ctx); /* 227 */
+YY_RULE(int) yy_Ticks5(yycontext *ctx); /* 226 */
+YY_RULE(int) yy_Ticks4(yycontext *ctx); /* 225 */
+YY_RULE(int) yy_Ticks3(yycontext *ctx); /* 224 */
+YY_RULE(int) yy_Ticks2(yycontext *ctx); /* 223 */
+YY_RULE(int) yy_Ticks1(yycontext *ctx); /* 222 */
+YY_RULE(int) yy_SkipBlock(yycontext *ctx); /* 221 */
+YY_RULE(int) yy_References(yycontext *ctx); /* 220 */
+YY_RULE(int) yy_EmptyTitle(yycontext *ctx); /* 219 */
+YY_RULE(int) yy_RefTitleParens(yycontext *ctx); /* 218 */
+YY_RULE(int) yy_RefTitleDouble(yycontext *ctx); /* 217 */
+YY_RULE(int) yy_RefTitleSingle(yycontext *ctx); /* 216 */
+YY_RULE(int) yy_RefTitle(yycontext *ctx); /* 215 */
+YY_RULE(int) yy_RefSrc(yycontext *ctx); /* 214 */
+YY_RULE(int) yy_AutoLinkEmail(yycontext *ctx); /* 213 */
+YY_RULE(int) yy_AutoLinkUrl(yycontext *ctx); /* 212 */
+YY_RULE(int) yy_TitleDouble(yycontext *ctx); /* 211 */
+YY_RULE(int) yy_TitleSingle(yycontext *ctx); /* 210 */
+YY_RULE(int) yy_Nonspacechar(yycontext *ctx); /* 209 */
+YY_RULE(int) yy_SourceContents(yycontext *ctx); /* 208 */
+YY_RULE(int) yy_Title(yycontext *ctx); /* 207 */
+YY_RULE(int) yy_ReferenceLinkSingle(yycontext *ctx); /* 206 */
+YY_RULE(int) yy_ReferenceLinkDouble(yycontext *ctx); /* 205 */
+YY_RULE(int) yy_AutoLink(yycontext *ctx); /* 204 */
+YY_RULE(int) yy_Source(yycontext *ctx); /* 203 */
+YY_RULE(int) yy_Label(yycontext *ctx); /* 202 */
+YY_RULE(int) yy_MediaLink(yycontext *ctx); /* 201 */
+YY_RULE(int) yy_ReferenceLink(yycontext *ctx); /* 200 */
+YY_RULE(int) yy_ExplicitLink(yycontext *ctx); /* 199 */
+YY_RULE(int) yy_StrongUl(yycontext *ctx); /* 198 */
+YY_RULE(int) yy_StrongStar(yycontext *ctx); /* 197 */
+YY_RULE(int) yy_Whitespace(yycontext *ctx); /* 196 */
+YY_RULE(int) yy_EmphUl(yycontext *ctx); /* 195 */
+YY_RULE(int) yy_EmphStar(yycontext *ctx); /* 194 */
+YY_RULE(int) yy_StarLine(yycontext *ctx); /* 193 */
+YY_RULE(int) yy_UlLine(yycontext *ctx); /* 192 */
+YY_RULE(int) yy_SpecialChar(yycontext *ctx); /* 191 */
+YY_RULE(int) yy_Eof(yycontext *ctx); /* 190 */
+YY_RULE(int) yy_NormalEndline(yycontext *ctx); /* 189 */
+YY_RULE(int) yy_TerminalEndline(yycontext *ctx); /* 188 */
+YY_RULE(int) yy_LineBreak(yycontext *ctx); /* 187 */
+YY_RULE(int) yy_CharEntity(yycontext *ctx); /* 186 */
+YY_RULE(int) yy_DecEntity(yycontext *ctx); /* 185 */
+YY_RULE(int) yy_HexEntity(yycontext *ctx); /* 184 */
+YY_RULE(int) yy_AposChunk(yycontext *ctx); /* 183 */
+YY_RULE(int) yy_Alphanumeric(yycontext *ctx); /* 182 */
+YY_RULE(int) yy_StrChunk(yycontext *ctx); /* 181 */
+YY_RULE(int) yy_NormalChar(yycontext *ctx); /* 180 */
+YY_RULE(int) yy_Symbol(yycontext *ctx); /* 179 */
+YY_RULE(int) yy_Smart(yycontext *ctx); /* 178 */
+YY_RULE(int) yy_EscapedChar(yycontext *ctx); /* 177 */
+YY_RULE(int) yy_Entity(yycontext *ctx); /* 176 */
+YY_RULE(int) yy_RawHtml(yycontext *ctx); /* 175 */
+YY_RULE(int) yy_Code(yycontext *ctx); /* 174 */
+YY_RULE(int) yy_InlineNote(yycontext *ctx); /* 173 */
+YY_RULE(int) yy_NoteReference(yycontext *ctx); /* 172 */
+YY_RULE(int) yy_Str(yycontext *ctx); /* 171 */
+YY_RULE(int) yy_Link(yycontext *ctx); /* 170 */
+YY_RULE(int) yy_Image(yycontext *ctx); /* 169 */
+YY_RULE(int) yy_Strike(yycontext *ctx); /* 168 */
+YY_RULE(int) yy_Emph(yycontext *ctx); /* 167 */
+YY_RULE(int) yy_Strong(yycontext *ctx); /* 166 */
+YY_RULE(int) yy_Space(yycontext *ctx); /* 165 */
+YY_RULE(int) yy_UlOrStarLine(yycontext *ctx); /* 164 */
+YY_RULE(int) yy_InStyleTags(yycontext *ctx); /* 163 */
+YY_RULE(int) yy_StyleClose(yycontext *ctx); /* 162 */
+YY_RULE(int) yy_StyleOpen(yycontext *ctx); /* 161 */
+YY_RULE(int) yy_HtmlBlockType(yycontext *ctx); /* 160 */
+YY_RULE(int) yy_HtmlBlockSelfClosing(yycontext *ctx); /* 159 */
+YY_RULE(int) yy_HtmlComment(yycontext *ctx); /* 158 */
+YY_RULE(int) yy_HtmlBlockInTags(yycontext *ctx); /* 157 */
+YY_RULE(int) yy_HtmlBlockHead(yycontext *ctx); /* 156 */
+YY_RULE(int) yy_HtmlBlockCloseHead(yycontext *ctx); /* 155 */
+YY_RULE(int) yy_HtmlBlockOpenHead(yycontext *ctx); /* 154 */
+YY_RULE(int) yy_HtmlBlockScript(yycontext *ctx); /* 153 */
+YY_RULE(int) yy_HtmlBlockCloseScript(yycontext *ctx); /* 152 */
+YY_RULE(int) yy_HtmlBlockOpenScript(yycontext *ctx); /* 151 */
+YY_RULE(int) yy_HtmlBlockTr(yycontext *ctx); /* 150 */
+YY_RULE(int) yy_HtmlBlockCloseTr(yycontext *ctx); /* 149 */
+YY_RULE(int) yy_HtmlBlockOpenTr(yycontext *ctx); /* 148 */
+YY_RULE(int) yy_HtmlBlockThead(yycontext *ctx); /* 147 */
+YY_RULE(int) yy_HtmlBlockCloseThead(yycontext *ctx); /* 146 */
+YY_RULE(int) yy_HtmlBlockOpenThead(yycontext *ctx); /* 145 */
+YY_RULE(int) yy_HtmlBlockTh(yycontext *ctx); /* 144 */
+YY_RULE(int) yy_HtmlBlockCloseTh(yycontext *ctx); /* 143 */
+YY_RULE(int) yy_HtmlBlockOpenTh(yycontext *ctx); /* 142 */
+YY_RULE(int) yy_HtmlBlockTfoot(yycontext *ctx); /* 141 */
+YY_RULE(int) yy_HtmlBlockCloseTfoot(yycontext *ctx); /* 140 */
+YY_RULE(int) yy_HtmlBlockOpenTfoot(yycontext *ctx); /* 139 */
+YY_RULE(int) yy_HtmlBlockTd(yycontext *ctx); /* 138 */
+YY_RULE(int) yy_HtmlBlockCloseTd(yycontext *ctx); /* 137 */
+YY_RULE(int) yy_HtmlBlockOpenTd(yycontext *ctx); /* 136 */
+YY_RULE(int) yy_HtmlBlockTbody(yycontext *ctx); /* 135 */
+YY_RULE(int) yy_HtmlBlockCloseTbody(yycontext *ctx); /* 134 */
+YY_RULE(int) yy_HtmlBlockOpenTbody(yycontext *ctx); /* 133 */
+YY_RULE(int) yy_HtmlBlockLi(yycontext *ctx); /* 132 */
+YY_RULE(int) yy_HtmlBlockCloseLi(yycontext *ctx); /* 131 */
+YY_RULE(int) yy_HtmlBlockOpenLi(yycontext *ctx); /* 130 */
+YY_RULE(int) yy_HtmlBlockFrameset(yycontext *ctx); /* 129 */
+YY_RULE(int) yy_HtmlBlockCloseFrameset(yycontext *ctx); /* 128 */
+YY_RULE(int) yy_HtmlBlockOpenFrameset(yycontext *ctx); /* 127 */
+YY_RULE(int) yy_HtmlBlockDt(yycontext *ctx); /* 126 */
+YY_RULE(int) yy_HtmlBlockCloseDt(yycontext *ctx); /* 125 */
+YY_RULE(int) yy_HtmlBlockOpenDt(yycontext *ctx); /* 124 */
+YY_RULE(int) yy_HtmlBlockDd(yycontext *ctx); /* 123 */
+YY_RULE(int) yy_HtmlBlockCloseDd(yycontext *ctx); /* 122 */
+YY_RULE(int) yy_HtmlBlockOpenDd(yycontext *ctx); /* 121 */
+YY_RULE(int) yy_HtmlBlockUl(yycontext *ctx); /* 120 */
+YY_RULE(int) yy_HtmlBlockCloseUl(yycontext *ctx); /* 119 */
+YY_RULE(int) yy_HtmlBlockOpenUl(yycontext *ctx); /* 118 */
+YY_RULE(int) yy_HtmlBlockTable(yycontext *ctx); /* 117 */
+YY_RULE(int) yy_HtmlBlockCloseTable(yycontext *ctx); /* 116 */
+YY_RULE(int) yy_HtmlBlockOpenTable(yycontext *ctx); /* 115 */
+YY_RULE(int) yy_HtmlBlockPre(yycontext *ctx); /* 114 */
+YY_RULE(int) yy_HtmlBlockClosePre(yycontext *ctx); /* 113 */
+YY_RULE(int) yy_HtmlBlockOpenPre(yycontext *ctx); /* 112 */
+YY_RULE(int) yy_HtmlBlockP(yycontext *ctx); /* 111 */
+YY_RULE(int) yy_HtmlBlockCloseP(yycontext *ctx); /* 110 */
+YY_RULE(int) yy_HtmlBlockOpenP(yycontext *ctx); /* 109 */
+YY_RULE(int) yy_HtmlBlockOl(yycontext *ctx); /* 108 */
+YY_RULE(int) yy_HtmlBlockCloseOl(yycontext *ctx); /* 107 */
+YY_RULE(int) yy_HtmlBlockOpenOl(yycontext *ctx); /* 106 */
+YY_RULE(int) yy_HtmlBlockNoscript(yycontext *ctx); /* 105 */
+YY_RULE(int) yy_HtmlBlockCloseNoscript(yycontext *ctx); /* 104 */
+YY_RULE(int) yy_HtmlBlockOpenNoscript(yycontext *ctx); /* 103 */
+YY_RULE(int) yy_HtmlBlockNoframes(yycontext *ctx); /* 102 */
+YY_RULE(int) yy_HtmlBlockCloseNoframes(yycontext *ctx); /* 101 */
+YY_RULE(int) yy_HtmlBlockOpenNoframes(yycontext *ctx); /* 100 */
+YY_RULE(int) yy_HtmlBlockMenu(yycontext *ctx); /* 99 */
+YY_RULE(int) yy_HtmlBlockCloseMenu(yycontext *ctx); /* 98 */
+YY_RULE(int) yy_HtmlBlockOpenMenu(yycontext *ctx); /* 97 */
+YY_RULE(int) yy_HtmlBlockH6(yycontext *ctx); /* 96 */
+YY_RULE(int) yy_HtmlBlockCloseH6(yycontext *ctx); /* 95 */
+YY_RULE(int) yy_HtmlBlockOpenH6(yycontext *ctx); /* 94 */
+YY_RULE(int) yy_HtmlBlockH5(yycontext *ctx); /* 93 */
+YY_RULE(int) yy_HtmlBlockCloseH5(yycontext *ctx); /* 92 */
+YY_RULE(int) yy_HtmlBlockOpenH5(yycontext *ctx); /* 91 */
+YY_RULE(int) yy_HtmlBlockH4(yycontext *ctx); /* 90 */
+YY_RULE(int) yy_HtmlBlockCloseH4(yycontext *ctx); /* 89 */
+YY_RULE(int) yy_HtmlBlockOpenH4(yycontext *ctx); /* 88 */
+YY_RULE(int) yy_HtmlBlockH3(yycontext *ctx); /* 87 */
+YY_RULE(int) yy_HtmlBlockCloseH3(yycontext *ctx); /* 86 */
+YY_RULE(int) yy_HtmlBlockOpenH3(yycontext *ctx); /* 85 */
+YY_RULE(int) yy_HtmlBlockH2(yycontext *ctx); /* 84 */
+YY_RULE(int) yy_HtmlBlockCloseH2(yycontext *ctx); /* 83 */
+YY_RULE(int) yy_HtmlBlockOpenH2(yycontext *ctx); /* 82 */
+YY_RULE(int) yy_HtmlBlockH1(yycontext *ctx); /* 81 */
+YY_RULE(int) yy_HtmlBlockCloseH1(yycontext *ctx); /* 80 */
+YY_RULE(int) yy_HtmlBlockOpenH1(yycontext *ctx); /* 79 */
+YY_RULE(int) yy_HtmlBlockForm(yycontext *ctx); /* 78 */
+YY_RULE(int) yy_HtmlBlockCloseForm(yycontext *ctx); /* 77 */
+YY_RULE(int) yy_HtmlBlockOpenForm(yycontext *ctx); /* 76 */
+YY_RULE(int) yy_HtmlBlockFieldset(yycontext *ctx); /* 75 */
+YY_RULE(int) yy_HtmlBlockCloseFieldset(yycontext *ctx); /* 74 */
+YY_RULE(int) yy_HtmlBlockOpenFieldset(yycontext *ctx); /* 73 */
+YY_RULE(int) yy_HtmlBlockDl(yycontext *ctx); /* 72 */
+YY_RULE(int) yy_HtmlBlockCloseDl(yycontext *ctx); /* 71 */
+YY_RULE(int) yy_HtmlBlockOpenDl(yycontext *ctx); /* 70 */
+YY_RULE(int) yy_HtmlBlockDiv(yycontext *ctx); /* 69 */
+YY_RULE(int) yy_HtmlBlockCloseDiv(yycontext *ctx); /* 68 */
+YY_RULE(int) yy_HtmlBlockOpenDiv(yycontext *ctx); /* 67 */
+YY_RULE(int) yy_HtmlBlockDir(yycontext *ctx); /* 66 */
+YY_RULE(int) yy_HtmlBlockCloseDir(yycontext *ctx); /* 65 */
+YY_RULE(int) yy_HtmlBlockOpenDir(yycontext *ctx); /* 64 */
+YY_RULE(int) yy_HtmlBlockCenter(yycontext *ctx); /* 63 */
+YY_RULE(int) yy_HtmlBlockCloseCenter(yycontext *ctx); /* 62 */
+YY_RULE(int) yy_HtmlBlockOpenCenter(yycontext *ctx); /* 61 */
+YY_RULE(int) yy_HtmlBlockBlockquote(yycontext *ctx); /* 60 */
+YY_RULE(int) yy_HtmlBlockCloseBlockquote(yycontext *ctx); /* 59 */
+YY_RULE(int) yy_HtmlBlockOpenBlockquote(yycontext *ctx); /* 58 */
+YY_RULE(int) yy_HtmlBlockAddress(yycontext *ctx); /* 57 */
+YY_RULE(int) yy_HtmlBlockCloseAddress(yycontext *ctx); /* 56 */
+YY_RULE(int) yy_HtmlAttribute(yycontext *ctx); /* 55 */
+YY_RULE(int) yy_Spnl(yycontext *ctx); /* 54 */
+YY_RULE(int) yy_HtmlBlockOpenAddress(yycontext *ctx); /* 53 */
+YY_RULE(int) yy_OptionallyIndentedLine(yycontext *ctx); /* 52 */
+YY_RULE(int) yy_Indent(yycontext *ctx); /* 51 */
+YY_RULE(int) yy_ListBlockLine(yycontext *ctx); /* 50 */
+YY_RULE(int) yy_ListContinuationBlock(yycontext *ctx); /* 49 */
+YY_RULE(int) yy_ListBlock(yycontext *ctx); /* 48 */
+YY_RULE(int) yy_ListItem(yycontext *ctx); /* 47 */
+YY_RULE(int) yy_Enumerator(yycontext *ctx); /* 46 */
+YY_RULE(int) yy_ListItemTight(yycontext *ctx); /* 45 */
+YY_RULE(int) yy_ListLoose(yycontext *ctx); /* 44 */
+YY_RULE(int) yy_ListTight(yycontext *ctx); /* 43 */
+YY_RULE(int) yy_Bullet(yycontext *ctx); /* 42 */
+YY_RULE(int) yy_VerbatimChunk(yycontext *ctx); /* 41 */
+YY_RULE(int) yy_IndentedLine(yycontext *ctx); /* 40 */
+YY_RULE(int) yy_NonblankIndentedLine(yycontext *ctx); /* 39 */
+YY_RULE(int) yy_Line(yycontext *ctx); /* 38 */
+YY_RULE(int) yy_BlockQuoteRaw(yycontext *ctx); /* 37 */
+YY_RULE(int) yy_Endline(yycontext *ctx); /* 36 */
+YY_RULE(int) yy_RawLine(yycontext *ctx); /* 35 */
+YY_RULE(int) yy_SetextBottom2(yycontext *ctx); /* 34 */
+YY_RULE(int) yy_SetextBottom1(yycontext *ctx); /* 33 */
+YY_RULE(int) yy_SetextHeading2(yycontext *ctx); /* 32 */
+YY_RULE(int) yy_SetextHeading1(yycontext *ctx); /* 31 */
+YY_RULE(int) yy_SetextHeading(yycontext *ctx); /* 30 */
+YY_RULE(int) yy_AtxHeading(yycontext *ctx); /* 29 */
 YY_RULE(int) yy_Spacechar(yycontext *ctx); /* 28 */
-YY_RULE(int) yy_AtxHeading(yycontext *ctx); /* 27 */
-YY_RULE(int) yy_AtxStart(yycontext *ctx); /* 26 */
-YY_RULE(int) yy_Inline(yycontext *ctx); /* 25 */
-YY_RULE(int) yy_Sp(yycontext *ctx); /* 24 */
-YY_RULE(int) yy_Newline(yycontext *ctx); /* 23 */
-YY_RULE(int) yy_AtxInline(yycontext *ctx); /* 22 */
-YY_RULE(int) yy_Inlines(yycontext *ctx); /* 21 */
-YY_RULE(int) yy_NonindentSpace(yycontext *ctx); /* 20 */
-YY_RULE(int) yy_Plain(yycontext *ctx); /* 19 */
-YY_RULE(int) yy_Para(yycontext *ctx); /* 18 */
-YY_RULE(int) yy_Video(yycontext *ctx); /* 17 */
-YY_RULE(int) yy_Audio(yycontext *ctx); /* 16 */
-YY_RULE(int) yy_StyleBlock(yycontext *ctx); /* 15 */
-YY_RULE(int) yy_HtmlBlock(yycontext *ctx); /* 14 */
-YY_RULE(int) yy_BulletList(yycontext *ctx); /* 13 */
-YY_RULE(int) yy_OrderedList(yycontext *ctx); /* 12 */
-YY_RULE(int) yy_Heading(yycontext *ctx); /* 11 */
-YY_RULE(int) yy_HorizontalRule(yycontext *ctx); /* 10 */
-YY_RULE(int) yy_Reference(yycontext *ctx); /* 9 */
-YY_RULE(int) yy_Note(yycontext *ctx); /* 8 */
+YY_RULE(int) yy_AtxStart(yycontext *ctx); /* 27 */
+YY_RULE(int) yy_Inline(yycontext *ctx); /* 26 */
+YY_RULE(int) yy_Sp(yycontext *ctx); /* 25 */
+YY_RULE(int) yy_Newline(yycontext *ctx); /* 24 */
+YY_RULE(int) yy_AtxInline(yycontext *ctx); /* 23 */
+YY_RULE(int) yy_Inlines(yycontext *ctx); /* 22 */
+YY_RULE(int) yy_NonindentSpace(yycontext *ctx); /* 21 */
+YY_RULE(int) yy_Plain(yycontext *ctx); /* 20 */
+YY_RULE(int) yy_Para(yycontext *ctx); /* 19 */
+YY_RULE(int) yy_Video(yycontext *ctx); /* 18 */
+YY_RULE(int) yy_Audio(yycontext *ctx); /* 17 */
+YY_RULE(int) yy_StyleBlock(yycontext *ctx); /* 16 */
+YY_RULE(int) yy_HtmlBlock(yycontext *ctx); /* 15 */
+YY_RULE(int) yy_BulletList(yycontext *ctx); /* 14 */
+YY_RULE(int) yy_OrderedList(yycontext *ctx); /* 13 */
+YY_RULE(int) yy_Heading(yycontext *ctx); /* 12 */
+YY_RULE(int) yy_HorizontalRule(yycontext *ctx); /* 11 */
+YY_RULE(int) yy_Reference(yycontext *ctx); /* 10 */
+YY_RULE(int) yy_Note(yycontext *ctx); /* 9 */
+YY_RULE(int) yy_CodeBlock(yycontext *ctx); /* 8 */
 YY_RULE(int) yy_Verbatim(yycontext *ctx); /* 7 */
 YY_RULE(int) yy_BlockQuote(yycontext *ctx); /* 6 */
 YY_RULE(int) yy_BlankLine(yycontext *ctx); /* 5 */
@@ -1539,6 +1540,19 @@ YY_ACTION(void) yy_1_Inlines(yycontext *ctx, char *yytext, int yyleng)
 #undef yy
 #undef c
 #undef a
+}
+YY_ACTION(void) yy_1_CodeBlock(yycontext *ctx, char *yytext, int yyleng)
+{
+#define yy ctx->yy
+#define yypos ctx->pos
+#define yythunkpos ctx->thunkpos
+  yyprintf((stderr, "do yy_1_CodeBlock\n"));
+   yy = mk_str(yytext);
+              yy->key = VERBATIM;
+            ;
+#undef yythunkpos
+#undef yypos
+#undef yy
 }
 YY_ACTION(void) yy_1_StyleBlock(yycontext *ctx, char *yytext, int yyleng)
 {
@@ -6342,11 +6356,7 @@ YY_RULE(int) yy_SetextHeading2(yycontext *ctx)
   l1409:;	  ctx->pos= yypos1409; ctx->thunkpos= yythunkpos1409;
   }  if (!yy_Inline(ctx)) goto l1407;  yyDo(ctx, yy_1_SetextHeading2, ctx->begin, ctx->end);  goto l1406;
   l1407:;	  ctx->pos= yypos1407; ctx->thunkpos= yythunkpos1407;
-  }
-  {  int yypos1410= ctx->pos, yythunkpos1410= ctx->thunkpos;  if (!yy_Sp(ctx)) goto l1410;  goto l1411;
-  l1410:;	  ctx->pos= yypos1410; ctx->thunkpos= yythunkpos1410;
-  }
-  l1411:;	  if (!yy_Newline(ctx)) goto l1404;  if (!yy_SetextBottom2(ctx)) goto l1404;  yyDo(ctx, yy_2_SetextHeading2, ctx->begin, ctx->end);
+  }  if (!yy_Sp(ctx)) goto l1404;  if (!yy_Newline(ctx)) goto l1404;  if (!yy_SetextBottom2(ctx)) goto l1404;  yyDo(ctx, yy_2_SetextHeading2, ctx->begin, ctx->end);
   yyprintf((stderr, "  ok   %s @ %s\n", "SetextHeading2", ctx->buf+ctx->pos));  yyDo(ctx, yyPop, 1, 0);
   return 1;
   l1404:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
@@ -6356,135 +6366,127 @@ YY_RULE(int) yy_SetextHeading2(yycontext *ctx)
 YY_RULE(int) yy_SetextHeading1(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;  yyDo(ctx, yyPush, 1, 0);
   yyprintf((stderr, "%s\n", "SetextHeading1"));
-  {  int yypos1413= ctx->pos, yythunkpos1413= ctx->thunkpos;  if (!yy_RawLine(ctx)) goto l1412;  if (!yy_SetextBottom1(ctx)) goto l1412;  ctx->pos= yypos1413; ctx->thunkpos= yythunkpos1413;
-  }  if (!yy_StartList(ctx)) goto l1412;  yyDo(ctx, yySet, -1, 0);
-  {  int yypos1416= ctx->pos, yythunkpos1416= ctx->thunkpos;  if (!yy_Endline(ctx)) goto l1416;  goto l1412;
-  l1416:;	  ctx->pos= yypos1416; ctx->thunkpos= yythunkpos1416;
-  }  if (!yy_Inline(ctx)) goto l1412;  yyDo(ctx, yy_1_SetextHeading1, ctx->begin, ctx->end);
-  l1414:;	
-  {  int yypos1415= ctx->pos, yythunkpos1415= ctx->thunkpos;
-  {  int yypos1417= ctx->pos, yythunkpos1417= ctx->thunkpos;  if (!yy_Endline(ctx)) goto l1417;  goto l1415;
-  l1417:;	  ctx->pos= yypos1417; ctx->thunkpos= yythunkpos1417;
-  }  if (!yy_Inline(ctx)) goto l1415;  yyDo(ctx, yy_1_SetextHeading1, ctx->begin, ctx->end);  goto l1414;
+  {  int yypos1411= ctx->pos, yythunkpos1411= ctx->thunkpos;  if (!yy_RawLine(ctx)) goto l1410;  if (!yy_SetextBottom1(ctx)) goto l1410;  ctx->pos= yypos1411; ctx->thunkpos= yythunkpos1411;
+  }  if (!yy_StartList(ctx)) goto l1410;  yyDo(ctx, yySet, -1, 0);
+  {  int yypos1414= ctx->pos, yythunkpos1414= ctx->thunkpos;  if (!yy_Endline(ctx)) goto l1414;  goto l1410;
+  l1414:;	  ctx->pos= yypos1414; ctx->thunkpos= yythunkpos1414;
+  }  if (!yy_Inline(ctx)) goto l1410;  yyDo(ctx, yy_1_SetextHeading1, ctx->begin, ctx->end);
+  l1412:;	
+  {  int yypos1413= ctx->pos, yythunkpos1413= ctx->thunkpos;
+  {  int yypos1415= ctx->pos, yythunkpos1415= ctx->thunkpos;  if (!yy_Endline(ctx)) goto l1415;  goto l1413;
   l1415:;	  ctx->pos= yypos1415; ctx->thunkpos= yythunkpos1415;
-  }
-  {  int yypos1418= ctx->pos, yythunkpos1418= ctx->thunkpos;  if (!yy_Sp(ctx)) goto l1418;  goto l1419;
-  l1418:;	  ctx->pos= yypos1418; ctx->thunkpos= yythunkpos1418;
-  }
-  l1419:;	  if (!yy_Newline(ctx)) goto l1412;  if (!yy_SetextBottom1(ctx)) goto l1412;  yyDo(ctx, yy_2_SetextHeading1, ctx->begin, ctx->end);
+  }  if (!yy_Inline(ctx)) goto l1413;  yyDo(ctx, yy_1_SetextHeading1, ctx->begin, ctx->end);  goto l1412;
+  l1413:;	  ctx->pos= yypos1413; ctx->thunkpos= yythunkpos1413;
+  }  if (!yy_Sp(ctx)) goto l1410;  if (!yy_Newline(ctx)) goto l1410;  if (!yy_SetextBottom1(ctx)) goto l1410;  yyDo(ctx, yy_2_SetextHeading1, ctx->begin, ctx->end);
   yyprintf((stderr, "  ok   %s @ %s\n", "SetextHeading1", ctx->buf+ctx->pos));  yyDo(ctx, yyPop, 1, 0);
   return 1;
-  l1412:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1410:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "SetextHeading1", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_SetextHeading(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
   yyprintf((stderr, "%s\n", "SetextHeading"));
-  {  int yypos1421= ctx->pos, yythunkpos1421= ctx->thunkpos;  if (!yy_SetextHeading1(ctx)) goto l1422;  goto l1421;
-  l1422:;	  ctx->pos= yypos1421; ctx->thunkpos= yythunkpos1421;  if (!yy_SetextHeading2(ctx)) goto l1420;
+  {  int yypos1417= ctx->pos, yythunkpos1417= ctx->thunkpos;  if (!yy_SetextHeading1(ctx)) goto l1418;  goto l1417;
+  l1418:;	  ctx->pos= yypos1417; ctx->thunkpos= yythunkpos1417;  if (!yy_SetextHeading2(ctx)) goto l1416;
   }
-  l1421:;	
+  l1417:;	
   yyprintf((stderr, "  ok   %s @ %s\n", "SetextHeading", ctx->buf+ctx->pos));
   return 1;
-  l1420:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1416:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "SetextHeading", ctx->buf+ctx->pos));
+  return 0;
+}
+YY_RULE(int) yy_AtxHeading(yycontext *ctx)
+{  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;  yyDo(ctx, yyPush, 2, 0);
+  yyprintf((stderr, "%s\n", "AtxHeading"));  if (!yy_AtxStart(ctx)) goto l1419;  yyDo(ctx, yySet, -2, 0);  if (!yy_Sp(ctx)) goto l1419;  if (!yy_StartList(ctx)) goto l1419;  yyDo(ctx, yySet, -1, 0);  if (!yy_AtxInline(ctx)) goto l1419;  yyDo(ctx, yy_1_AtxHeading, ctx->begin, ctx->end);
+  l1420:;	
+  {  int yypos1421= ctx->pos, yythunkpos1421= ctx->thunkpos;  if (!yy_AtxInline(ctx)) goto l1421;  yyDo(ctx, yy_1_AtxHeading, ctx->begin, ctx->end);  goto l1420;
+  l1421:;	  ctx->pos= yypos1421; ctx->thunkpos= yythunkpos1421;
+  }
+  {  int yypos1422= ctx->pos, yythunkpos1422= ctx->thunkpos;  if (!yy_Sp(ctx)) goto l1422;
+  l1424:;	
+  {  int yypos1425= ctx->pos, yythunkpos1425= ctx->thunkpos;  if (!yymatchChar(ctx, '#')) goto l1425;  goto l1424;
+  l1425:;	  ctx->pos= yypos1425; ctx->thunkpos= yythunkpos1425;
+  }  if (!yy_Sp(ctx)) goto l1422;  goto l1423;
+  l1422:;	  ctx->pos= yypos1422; ctx->thunkpos= yythunkpos1422;
+  }
+  l1423:;	  if (!yy_Newline(ctx)) goto l1419;  yyDo(ctx, yy_2_AtxHeading, ctx->begin, ctx->end);
+  yyprintf((stderr, "  ok   %s @ %s\n", "AtxHeading", ctx->buf+ctx->pos));  yyDo(ctx, yyPop, 2, 0);
+  return 1;
+  l1419:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  yyprintf((stderr, "  fail %s @ %s\n", "AtxHeading", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_Spacechar(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
   yyprintf((stderr, "%s\n", "Spacechar"));
-  {  int yypos1424= ctx->pos, yythunkpos1424= ctx->thunkpos;  if (!yymatchChar(ctx, ' ')) goto l1425;  goto l1424;
-  l1425:;	  ctx->pos= yypos1424; ctx->thunkpos= yythunkpos1424;  if (!yymatchChar(ctx, '\t')) goto l1426;  goto l1424;
-  l1426:;	  ctx->pos= yypos1424; ctx->thunkpos= yythunkpos1424;  if (!yymatchString(ctx, "\302")) goto l1423;  if (!yymatchString(ctx, "\240")) goto l1423;
+  {  int yypos1427= ctx->pos, yythunkpos1427= ctx->thunkpos;  if (!yymatchChar(ctx, ' ')) goto l1428;  goto l1427;
+  l1428:;	  ctx->pos= yypos1427; ctx->thunkpos= yythunkpos1427;  if (!yymatchChar(ctx, '\t')) goto l1429;  goto l1427;
+  l1429:;	  ctx->pos= yypos1427; ctx->thunkpos= yythunkpos1427;  if (!yymatchString(ctx, "\302")) goto l1426;  if (!yymatchString(ctx, "\240")) goto l1426;
   }
-  l1424:;	
+  l1427:;	
   yyprintf((stderr, "  ok   %s @ %s\n", "Spacechar", ctx->buf+ctx->pos));
   return 1;
-  l1423:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1426:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "Spacechar", ctx->buf+ctx->pos));
-  return 0;
-}
-YY_RULE(int) yy_AtxHeading(yycontext *ctx)
-{  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;  yyDo(ctx, yyPush, 2, 0);
-  yyprintf((stderr, "%s\n", "AtxHeading"));  if (!yy_AtxStart(ctx)) goto l1427;  yyDo(ctx, yySet, -2, 0);  if (!yy_Spacechar(ctx)) goto l1427;
-  l1428:;	
-  {  int yypos1429= ctx->pos, yythunkpos1429= ctx->thunkpos;  if (!yy_Spacechar(ctx)) goto l1429;  goto l1428;
-  l1429:;	  ctx->pos= yypos1429; ctx->thunkpos= yythunkpos1429;
-  }  if (!yy_StartList(ctx)) goto l1427;  yyDo(ctx, yySet, -1, 0);  if (!yy_AtxInline(ctx)) goto l1427;  yyDo(ctx, yy_1_AtxHeading, ctx->begin, ctx->end);
-  l1430:;	
-  {  int yypos1431= ctx->pos, yythunkpos1431= ctx->thunkpos;  if (!yy_AtxInline(ctx)) goto l1431;  yyDo(ctx, yy_1_AtxHeading, ctx->begin, ctx->end);  goto l1430;
-  l1431:;	  ctx->pos= yypos1431; ctx->thunkpos= yythunkpos1431;
-  }
-  {  int yypos1432= ctx->pos, yythunkpos1432= ctx->thunkpos;
-  {  int yypos1434= ctx->pos, yythunkpos1434= ctx->thunkpos;  if (!yy_Sp(ctx)) goto l1434;  goto l1435;
-  l1434:;	  ctx->pos= yypos1434; ctx->thunkpos= yythunkpos1434;
-  }
-  l1435:;	
-  l1436:;	
-  {  int yypos1437= ctx->pos, yythunkpos1437= ctx->thunkpos;  if (!yymatchChar(ctx, '#')) goto l1437;  goto l1436;
-  l1437:;	  ctx->pos= yypos1437; ctx->thunkpos= yythunkpos1437;
-  }  if (!yy_Sp(ctx)) goto l1432;  goto l1433;
-  l1432:;	  ctx->pos= yypos1432; ctx->thunkpos= yythunkpos1432;
-  }
-  l1433:;	  if (!yy_Newline(ctx)) goto l1427;  yyDo(ctx, yy_2_AtxHeading, ctx->begin, ctx->end);
-  yyprintf((stderr, "  ok   %s @ %s\n", "AtxHeading", ctx->buf+ctx->pos));  yyDo(ctx, yyPop, 2, 0);
-  return 1;
-  l1427:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
-  yyprintf((stderr, "  fail %s @ %s\n", "AtxHeading", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_AtxStart(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
-  yyprintf((stderr, "%s\n", "AtxStart"));  yyText(ctx, ctx->begin, ctx->end);  if (!(YY_BEGIN)) goto l1438;
-  {  int yypos1439= ctx->pos, yythunkpos1439= ctx->thunkpos;  if (!yymatchString(ctx, "######")) goto l1440;  goto l1439;
-  l1440:;	  ctx->pos= yypos1439; ctx->thunkpos= yythunkpos1439;  if (!yymatchString(ctx, "#####")) goto l1441;  goto l1439;
-  l1441:;	  ctx->pos= yypos1439; ctx->thunkpos= yythunkpos1439;  if (!yymatchString(ctx, "####")) goto l1442;  goto l1439;
-  l1442:;	  ctx->pos= yypos1439; ctx->thunkpos= yythunkpos1439;  if (!yymatchString(ctx, "###")) goto l1443;  goto l1439;
-  l1443:;	  ctx->pos= yypos1439; ctx->thunkpos= yythunkpos1439;  if (!yymatchString(ctx, "##")) goto l1444;  goto l1439;
-  l1444:;	  ctx->pos= yypos1439; ctx->thunkpos= yythunkpos1439;  if (!yymatchChar(ctx, '#')) goto l1438;
+  yyprintf((stderr, "%s\n", "AtxStart"));  yyText(ctx, ctx->begin, ctx->end);  if (!(YY_BEGIN)) goto l1430;
+  {  int yypos1431= ctx->pos, yythunkpos1431= ctx->thunkpos;  if (!yymatchString(ctx, "######")) goto l1432;  goto l1431;
+  l1432:;	  ctx->pos= yypos1431; ctx->thunkpos= yythunkpos1431;  if (!yymatchString(ctx, "#####")) goto l1433;  goto l1431;
+  l1433:;	  ctx->pos= yypos1431; ctx->thunkpos= yythunkpos1431;  if (!yymatchString(ctx, "####")) goto l1434;  goto l1431;
+  l1434:;	  ctx->pos= yypos1431; ctx->thunkpos= yythunkpos1431;  if (!yymatchString(ctx, "###")) goto l1435;  goto l1431;
+  l1435:;	  ctx->pos= yypos1431; ctx->thunkpos= yythunkpos1431;  if (!yymatchString(ctx, "##")) goto l1436;  goto l1431;
+  l1436:;	  ctx->pos= yypos1431; ctx->thunkpos= yythunkpos1431;  if (!yymatchChar(ctx, '#')) goto l1430;
   }
-  l1439:;	  yyText(ctx, ctx->begin, ctx->end);  if (!(YY_END)) goto l1438;  yyDo(ctx, yy_1_AtxStart, ctx->begin, ctx->end);
+  l1431:;	  yyText(ctx, ctx->begin, ctx->end);  if (!(YY_END)) goto l1430;  if (!yy_Spacechar(ctx)) goto l1430;
+  l1437:;	
+  {  int yypos1438= ctx->pos, yythunkpos1438= ctx->thunkpos;  if (!yy_Spacechar(ctx)) goto l1438;  goto l1437;
+  l1438:;	  ctx->pos= yypos1438; ctx->thunkpos= yythunkpos1438;
+  }  yyDo(ctx, yy_1_AtxStart, ctx->begin, ctx->end);
   yyprintf((stderr, "  ok   %s @ %s\n", "AtxStart", ctx->buf+ctx->pos));
   return 1;
-  l1438:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1430:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "AtxStart", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_Inline(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
   yyprintf((stderr, "%s\n", "Inline"));
-  {  int yypos1446= ctx->pos, yythunkpos1446= ctx->thunkpos;  if (!yy_Endline(ctx)) goto l1447;  goto l1446;
-  l1447:;	  ctx->pos= yypos1446; ctx->thunkpos= yythunkpos1446;  if (!yy_UlOrStarLine(ctx)) goto l1448;  goto l1446;
-  l1448:;	  ctx->pos= yypos1446; ctx->thunkpos= yythunkpos1446;  if (!yy_Space(ctx)) goto l1449;  goto l1446;
-  l1449:;	  ctx->pos= yypos1446; ctx->thunkpos= yythunkpos1446;  if (!yy_Strong(ctx)) goto l1450;  goto l1446;
-  l1450:;	  ctx->pos= yypos1446; ctx->thunkpos= yythunkpos1446;  if (!yy_Emph(ctx)) goto l1451;  goto l1446;
-  l1451:;	  ctx->pos= yypos1446; ctx->thunkpos= yythunkpos1446;  if (!yy_Strike(ctx)) goto l1452;  goto l1446;
-  l1452:;	  ctx->pos= yypos1446; ctx->thunkpos= yythunkpos1446;  if (!yy_Image(ctx)) goto l1453;  goto l1446;
-  l1453:;	  ctx->pos= yypos1446; ctx->thunkpos= yythunkpos1446;  if (!yy_Link(ctx)) goto l1454;  goto l1446;
-  l1454:;	  ctx->pos= yypos1446; ctx->thunkpos= yythunkpos1446;  if (!yy_Str(ctx)) goto l1455;  goto l1446;
-  l1455:;	  ctx->pos= yypos1446; ctx->thunkpos= yythunkpos1446;  if (!yy_NoteReference(ctx)) goto l1456;  goto l1446;
-  l1456:;	  ctx->pos= yypos1446; ctx->thunkpos= yythunkpos1446;  if (!yy_InlineNote(ctx)) goto l1457;  goto l1446;
-  l1457:;	  ctx->pos= yypos1446; ctx->thunkpos= yythunkpos1446;  if (!yy_Code(ctx)) goto l1458;  goto l1446;
-  l1458:;	  ctx->pos= yypos1446; ctx->thunkpos= yythunkpos1446;  if (!yy_RawHtml(ctx)) goto l1459;  goto l1446;
-  l1459:;	  ctx->pos= yypos1446; ctx->thunkpos= yythunkpos1446;  if (!yy_Entity(ctx)) goto l1460;  goto l1446;
-  l1460:;	  ctx->pos= yypos1446; ctx->thunkpos= yythunkpos1446;  if (!yy_EscapedChar(ctx)) goto l1461;  goto l1446;
-  l1461:;	  ctx->pos= yypos1446; ctx->thunkpos= yythunkpos1446;  if (!yy_Smart(ctx)) goto l1462;  goto l1446;
-  l1462:;	  ctx->pos= yypos1446; ctx->thunkpos= yythunkpos1446;  if (!yy_Symbol(ctx)) goto l1445;
+  {  int yypos1440= ctx->pos, yythunkpos1440= ctx->thunkpos;  if (!yy_Endline(ctx)) goto l1441;  goto l1440;
+  l1441:;	  ctx->pos= yypos1440; ctx->thunkpos= yythunkpos1440;  if (!yy_UlOrStarLine(ctx)) goto l1442;  goto l1440;
+  l1442:;	  ctx->pos= yypos1440; ctx->thunkpos= yythunkpos1440;  if (!yy_Space(ctx)) goto l1443;  goto l1440;
+  l1443:;	  ctx->pos= yypos1440; ctx->thunkpos= yythunkpos1440;  if (!yy_Strong(ctx)) goto l1444;  goto l1440;
+  l1444:;	  ctx->pos= yypos1440; ctx->thunkpos= yythunkpos1440;  if (!yy_Emph(ctx)) goto l1445;  goto l1440;
+  l1445:;	  ctx->pos= yypos1440; ctx->thunkpos= yythunkpos1440;  if (!yy_Strike(ctx)) goto l1446;  goto l1440;
+  l1446:;	  ctx->pos= yypos1440; ctx->thunkpos= yythunkpos1440;  if (!yy_Image(ctx)) goto l1447;  goto l1440;
+  l1447:;	  ctx->pos= yypos1440; ctx->thunkpos= yythunkpos1440;  if (!yy_Link(ctx)) goto l1448;  goto l1440;
+  l1448:;	  ctx->pos= yypos1440; ctx->thunkpos= yythunkpos1440;  if (!yy_Str(ctx)) goto l1449;  goto l1440;
+  l1449:;	  ctx->pos= yypos1440; ctx->thunkpos= yythunkpos1440;  if (!yy_NoteReference(ctx)) goto l1450;  goto l1440;
+  l1450:;	  ctx->pos= yypos1440; ctx->thunkpos= yythunkpos1440;  if (!yy_InlineNote(ctx)) goto l1451;  goto l1440;
+  l1451:;	  ctx->pos= yypos1440; ctx->thunkpos= yythunkpos1440;  if (!yy_Code(ctx)) goto l1452;  goto l1440;
+  l1452:;	  ctx->pos= yypos1440; ctx->thunkpos= yythunkpos1440;  if (!yy_RawHtml(ctx)) goto l1453;  goto l1440;
+  l1453:;	  ctx->pos= yypos1440; ctx->thunkpos= yythunkpos1440;  if (!yy_Entity(ctx)) goto l1454;  goto l1440;
+  l1454:;	  ctx->pos= yypos1440; ctx->thunkpos= yythunkpos1440;  if (!yy_EscapedChar(ctx)) goto l1455;  goto l1440;
+  l1455:;	  ctx->pos= yypos1440; ctx->thunkpos= yythunkpos1440;  if (!yy_Smart(ctx)) goto l1456;  goto l1440;
+  l1456:;	  ctx->pos= yypos1440; ctx->thunkpos= yythunkpos1440;  if (!yy_Symbol(ctx)) goto l1439;
   }
-  l1446:;	
+  l1440:;	
   yyprintf((stderr, "  ok   %s @ %s\n", "Inline", ctx->buf+ctx->pos));
   return 1;
-  l1445:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1439:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "Inline", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_Sp(yycontext *ctx)
 {
   yyprintf((stderr, "%s\n", "Sp"));
-  l1464:;	
-  {  int yypos1465= ctx->pos, yythunkpos1465= ctx->thunkpos;  if (!yy_Spacechar(ctx)) goto l1465;  goto l1464;
-  l1465:;	  ctx->pos= yypos1465; ctx->thunkpos= yythunkpos1465;
+  l1458:;	
+  {  int yypos1459= ctx->pos, yythunkpos1459= ctx->thunkpos;  if (!yy_Spacechar(ctx)) goto l1459;  goto l1458;
+  l1459:;	  ctx->pos= yypos1459; ctx->thunkpos= yythunkpos1459;
   }
   yyprintf((stderr, "  ok   %s @ %s\n", "Sp", ctx->buf+ctx->pos));
   return 1;
@@ -6492,362 +6494,379 @@ YY_RULE(int) yy_Sp(yycontext *ctx)
 YY_RULE(int) yy_Newline(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
   yyprintf((stderr, "%s\n", "Newline"));
-  {  int yypos1467= ctx->pos, yythunkpos1467= ctx->thunkpos;  if (!yymatchChar(ctx, '\n')) goto l1468;  goto l1467;
-  l1468:;	  ctx->pos= yypos1467; ctx->thunkpos= yythunkpos1467;  if (!yymatchChar(ctx, '\r')) goto l1466;
-  {  int yypos1469= ctx->pos, yythunkpos1469= ctx->thunkpos;  if (!yymatchChar(ctx, '\n')) goto l1469;  goto l1470;
-  l1469:;	  ctx->pos= yypos1469; ctx->thunkpos= yythunkpos1469;
+  {  int yypos1461= ctx->pos, yythunkpos1461= ctx->thunkpos;  if (!yymatchChar(ctx, '\n')) goto l1462;  goto l1461;
+  l1462:;	  ctx->pos= yypos1461; ctx->thunkpos= yythunkpos1461;  if (!yymatchChar(ctx, '\r')) goto l1460;
+  {  int yypos1463= ctx->pos, yythunkpos1463= ctx->thunkpos;  if (!yymatchChar(ctx, '\n')) goto l1463;  goto l1464;
+  l1463:;	  ctx->pos= yypos1463; ctx->thunkpos= yythunkpos1463;
   }
-  l1470:;	
+  l1464:;	
   }
-  l1467:;	
+  l1461:;	
   yyprintf((stderr, "  ok   %s @ %s\n", "Newline", ctx->buf+ctx->pos));
   return 1;
-  l1466:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1460:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "Newline", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_AtxInline(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
   yyprintf((stderr, "%s\n", "AtxInline"));
-  {  int yypos1472= ctx->pos, yythunkpos1472= ctx->thunkpos;  if (!yy_Newline(ctx)) goto l1472;  goto l1471;
-  l1472:;	  ctx->pos= yypos1472; ctx->thunkpos= yythunkpos1472;
+  {  int yypos1466= ctx->pos, yythunkpos1466= ctx->thunkpos;  if (!yy_Newline(ctx)) goto l1466;  goto l1465;
+  l1466:;	  ctx->pos= yypos1466; ctx->thunkpos= yythunkpos1466;
   }
-  {  int yypos1473= ctx->pos, yythunkpos1473= ctx->thunkpos;
-  {  int yypos1474= ctx->pos, yythunkpos1474= ctx->thunkpos;  if (!yy_Sp(ctx)) goto l1474;  goto l1475;
-  l1474:;	  ctx->pos= yypos1474; ctx->thunkpos= yythunkpos1474;
-  }
-  l1475:;	
-  l1476:;	
-  {  int yypos1477= ctx->pos, yythunkpos1477= ctx->thunkpos;  if (!yymatchChar(ctx, '#')) goto l1477;  goto l1476;
-  l1477:;	  ctx->pos= yypos1477; ctx->thunkpos= yythunkpos1477;
-  }  if (!yy_Sp(ctx)) goto l1473;  if (!yy_Newline(ctx)) goto l1473;  goto l1471;
-  l1473:;	  ctx->pos= yypos1473; ctx->thunkpos= yythunkpos1473;
-  }  if (!yy_Inline(ctx)) goto l1471;
+  {  int yypos1467= ctx->pos, yythunkpos1467= ctx->thunkpos;  if (!yy_Sp(ctx)) goto l1467;
+  l1468:;	
+  {  int yypos1469= ctx->pos, yythunkpos1469= ctx->thunkpos;  if (!yymatchChar(ctx, '#')) goto l1469;  goto l1468;
+  l1469:;	  ctx->pos= yypos1469; ctx->thunkpos= yythunkpos1469;
+  }  if (!yy_Sp(ctx)) goto l1467;  if (!yy_Newline(ctx)) goto l1467;  goto l1465;
+  l1467:;	  ctx->pos= yypos1467; ctx->thunkpos= yythunkpos1467;
+  }  if (!yy_Inline(ctx)) goto l1465;
   yyprintf((stderr, "  ok   %s @ %s\n", "AtxInline", ctx->buf+ctx->pos));
   return 1;
-  l1471:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1465:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "AtxInline", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_Inlines(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;  yyDo(ctx, yyPush, 2, 0);
-  yyprintf((stderr, "%s\n", "Inlines"));  if (!yy_StartList(ctx)) goto l1478;  yyDo(ctx, yySet, -2, 0);
-  {  int yypos1481= ctx->pos, yythunkpos1481= ctx->thunkpos;
-  {  int yypos1483= ctx->pos, yythunkpos1483= ctx->thunkpos;  if (!yy_Endline(ctx)) goto l1483;  goto l1482;
-  l1483:;	  ctx->pos= yypos1483; ctx->thunkpos= yythunkpos1483;
-  }  if (!yy_Inline(ctx)) goto l1482;  yyDo(ctx, yy_1_Inlines, ctx->begin, ctx->end);  goto l1481;
-  l1482:;	  ctx->pos= yypos1481; ctx->thunkpos= yythunkpos1481;  if (!yy_Endline(ctx)) goto l1478;  yyDo(ctx, yySet, -1, 0);
-  {  int yypos1484= ctx->pos, yythunkpos1484= ctx->thunkpos;  if (!yy_Inline(ctx)) goto l1478;  ctx->pos= yypos1484; ctx->thunkpos= yythunkpos1484;
+  yyprintf((stderr, "%s\n", "Inlines"));  if (!yy_StartList(ctx)) goto l1470;  yyDo(ctx, yySet, -2, 0);
+  {  int yypos1473= ctx->pos, yythunkpos1473= ctx->thunkpos;
+  {  int yypos1475= ctx->pos, yythunkpos1475= ctx->thunkpos;  if (!yy_Endline(ctx)) goto l1475;  goto l1474;
+  l1475:;	  ctx->pos= yypos1475; ctx->thunkpos= yythunkpos1475;
+  }  if (!yy_Inline(ctx)) goto l1474;  yyDo(ctx, yy_1_Inlines, ctx->begin, ctx->end);  goto l1473;
+  l1474:;	  ctx->pos= yypos1473; ctx->thunkpos= yythunkpos1473;  if (!yy_Endline(ctx)) goto l1470;  yyDo(ctx, yySet, -1, 0);
+  {  int yypos1476= ctx->pos, yythunkpos1476= ctx->thunkpos;  if (!yy_Inline(ctx)) goto l1470;  ctx->pos= yypos1476; ctx->thunkpos= yythunkpos1476;
   }  yyDo(ctx, yy_2_Inlines, ctx->begin, ctx->end);
   }
-  l1481:;	
-  l1479:;	
-  {  int yypos1480= ctx->pos, yythunkpos1480= ctx->thunkpos;
-  {  int yypos1485= ctx->pos, yythunkpos1485= ctx->thunkpos;
-  {  int yypos1487= ctx->pos, yythunkpos1487= ctx->thunkpos;  if (!yy_Endline(ctx)) goto l1487;  goto l1486;
-  l1487:;	  ctx->pos= yypos1487; ctx->thunkpos= yythunkpos1487;
-  }  if (!yy_Inline(ctx)) goto l1486;  yyDo(ctx, yy_1_Inlines, ctx->begin, ctx->end);  goto l1485;
-  l1486:;	  ctx->pos= yypos1485; ctx->thunkpos= yythunkpos1485;  if (!yy_Endline(ctx)) goto l1480;  yyDo(ctx, yySet, -1, 0);
-  {  int yypos1488= ctx->pos, yythunkpos1488= ctx->thunkpos;  if (!yy_Inline(ctx)) goto l1480;  ctx->pos= yypos1488; ctx->thunkpos= yythunkpos1488;
+  l1473:;	
+  l1471:;	
+  {  int yypos1472= ctx->pos, yythunkpos1472= ctx->thunkpos;
+  {  int yypos1477= ctx->pos, yythunkpos1477= ctx->thunkpos;
+  {  int yypos1479= ctx->pos, yythunkpos1479= ctx->thunkpos;  if (!yy_Endline(ctx)) goto l1479;  goto l1478;
+  l1479:;	  ctx->pos= yypos1479; ctx->thunkpos= yythunkpos1479;
+  }  if (!yy_Inline(ctx)) goto l1478;  yyDo(ctx, yy_1_Inlines, ctx->begin, ctx->end);  goto l1477;
+  l1478:;	  ctx->pos= yypos1477; ctx->thunkpos= yythunkpos1477;  if (!yy_Endline(ctx)) goto l1472;  yyDo(ctx, yySet, -1, 0);
+  {  int yypos1480= ctx->pos, yythunkpos1480= ctx->thunkpos;  if (!yy_Inline(ctx)) goto l1472;  ctx->pos= yypos1480; ctx->thunkpos= yythunkpos1480;
   }  yyDo(ctx, yy_2_Inlines, ctx->begin, ctx->end);
   }
-  l1485:;	  goto l1479;
-  l1480:;	  ctx->pos= yypos1480; ctx->thunkpos= yythunkpos1480;
+  l1477:;	  goto l1471;
+  l1472:;	  ctx->pos= yypos1472; ctx->thunkpos= yythunkpos1472;
   }
-  {  int yypos1489= ctx->pos, yythunkpos1489= ctx->thunkpos;  if (!yy_Endline(ctx)) goto l1489;  goto l1490;
-  l1489:;	  ctx->pos= yypos1489; ctx->thunkpos= yythunkpos1489;
+  {  int yypos1481= ctx->pos, yythunkpos1481= ctx->thunkpos;  if (!yy_Endline(ctx)) goto l1481;  goto l1482;
+  l1481:;	  ctx->pos= yypos1481; ctx->thunkpos= yythunkpos1481;
   }
-  l1490:;	  yyDo(ctx, yy_3_Inlines, ctx->begin, ctx->end);
+  l1482:;	  yyDo(ctx, yy_3_Inlines, ctx->begin, ctx->end);
   yyprintf((stderr, "  ok   %s @ %s\n", "Inlines", ctx->buf+ctx->pos));  yyDo(ctx, yyPop, 2, 0);
   return 1;
-  l1478:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1470:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "Inlines", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_NonindentSpace(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
   yyprintf((stderr, "%s\n", "NonindentSpace"));
-  {  int yypos1492= ctx->pos, yythunkpos1492= ctx->thunkpos;  if (!yymatchString(ctx, "   ")) goto l1493;  goto l1492;
-  l1493:;	  ctx->pos= yypos1492; ctx->thunkpos= yythunkpos1492;  if (!yymatchString(ctx, "  ")) goto l1494;  goto l1492;
-  l1494:;	  ctx->pos= yypos1492; ctx->thunkpos= yythunkpos1492;  if (!yymatchChar(ctx, ' ')) goto l1495;  goto l1492;
-  l1495:;	  ctx->pos= yypos1492; ctx->thunkpos= yythunkpos1492;  if (!yymatchString(ctx, "")) goto l1491;
+  {  int yypos1484= ctx->pos, yythunkpos1484= ctx->thunkpos;  if (!yymatchString(ctx, "   ")) goto l1485;  goto l1484;
+  l1485:;	  ctx->pos= yypos1484; ctx->thunkpos= yythunkpos1484;  if (!yymatchString(ctx, "  ")) goto l1486;  goto l1484;
+  l1486:;	  ctx->pos= yypos1484; ctx->thunkpos= yythunkpos1484;  if (!yymatchChar(ctx, ' ')) goto l1487;  goto l1484;
+  l1487:;	  ctx->pos= yypos1484; ctx->thunkpos= yythunkpos1484;  if (!yymatchString(ctx, "")) goto l1483;
   }
-  l1492:;	
+  l1484:;	
   yyprintf((stderr, "  ok   %s @ %s\n", "NonindentSpace", ctx->buf+ctx->pos));
   return 1;
-  l1491:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1483:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "NonindentSpace", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_Plain(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;  yyDo(ctx, yyPush, 1, 0);
-  yyprintf((stderr, "%s\n", "Plain"));  if (!yy_Inlines(ctx)) goto l1496;  yyDo(ctx, yySet, -1, 0);  yyDo(ctx, yy_1_Plain, ctx->begin, ctx->end);
+  yyprintf((stderr, "%s\n", "Plain"));  if (!yy_Inlines(ctx)) goto l1488;  yyDo(ctx, yySet, -1, 0);  yyDo(ctx, yy_1_Plain, ctx->begin, ctx->end);
   yyprintf((stderr, "  ok   %s @ %s\n", "Plain", ctx->buf+ctx->pos));  yyDo(ctx, yyPop, 1, 0);
   return 1;
-  l1496:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1488:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "Plain", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_Para(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;  yyDo(ctx, yyPush, 1, 0);
-  yyprintf((stderr, "%s\n", "Para"));  if (!yy_NonindentSpace(ctx)) goto l1497;  if (!yy_Inlines(ctx)) goto l1497;  yyDo(ctx, yySet, -1, 0);  if (!yy_BlankLine(ctx)) goto l1497;
-  l1498:;	
-  {  int yypos1499= ctx->pos, yythunkpos1499= ctx->thunkpos;  if (!yy_BlankLine(ctx)) goto l1499;  goto l1498;
-  l1499:;	  ctx->pos= yypos1499; ctx->thunkpos= yythunkpos1499;
+  yyprintf((stderr, "%s\n", "Para"));  if (!yy_NonindentSpace(ctx)) goto l1489;  if (!yy_Inlines(ctx)) goto l1489;  yyDo(ctx, yySet, -1, 0);  if (!yy_BlankLine(ctx)) goto l1489;
+  l1490:;	
+  {  int yypos1491= ctx->pos, yythunkpos1491= ctx->thunkpos;  if (!yy_BlankLine(ctx)) goto l1491;  goto l1490;
+  l1491:;	  ctx->pos= yypos1491; ctx->thunkpos= yythunkpos1491;
   }  yyDo(ctx, yy_1_Para, ctx->begin, ctx->end);
   yyprintf((stderr, "  ok   %s @ %s\n", "Para", ctx->buf+ctx->pos));  yyDo(ctx, yyPop, 1, 0);
   return 1;
-  l1497:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1489:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "Para", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_Video(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
-  yyprintf((stderr, "%s\n", "Video"));  yyText(ctx, ctx->begin, ctx->end);  if (!( extension(EXT_MEDIA) )) goto l1500;  if (!yy_NonindentSpace(ctx)) goto l1500;  if (!yymatchChar(ctx, '%')) goto l1500;  if (!yy_MediaLink(ctx)) goto l1500;  yyDo(ctx, yy_1_Video, ctx->begin, ctx->end);
+  yyprintf((stderr, "%s\n", "Video"));  yyText(ctx, ctx->begin, ctx->end);  if (!( extension(EXT_MEDIA) )) goto l1492;  if (!yy_NonindentSpace(ctx)) goto l1492;  if (!yymatchChar(ctx, '%')) goto l1492;  if (!yy_MediaLink(ctx)) goto l1492;  yyDo(ctx, yy_1_Video, ctx->begin, ctx->end);
   yyprintf((stderr, "  ok   %s @ %s\n", "Video", ctx->buf+ctx->pos));
   return 1;
-  l1500:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1492:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "Video", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_Audio(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
-  yyprintf((stderr, "%s\n", "Audio"));  yyText(ctx, ctx->begin, ctx->end);  if (!( extension(EXT_MEDIA) )) goto l1501;  if (!yy_NonindentSpace(ctx)) goto l1501;  if (!yymatchChar(ctx, '~')) goto l1501;  if (!yy_MediaLink(ctx)) goto l1501;  yyDo(ctx, yy_1_Audio, ctx->begin, ctx->end);
+  yyprintf((stderr, "%s\n", "Audio"));  yyText(ctx, ctx->begin, ctx->end);  if (!( extension(EXT_MEDIA) )) goto l1493;  if (!yy_NonindentSpace(ctx)) goto l1493;  if (!yymatchChar(ctx, '~')) goto l1493;  if (!yy_MediaLink(ctx)) goto l1493;  yyDo(ctx, yy_1_Audio, ctx->begin, ctx->end);
   yyprintf((stderr, "  ok   %s @ %s\n", "Audio", ctx->buf+ctx->pos));
   return 1;
-  l1501:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1493:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "Audio", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_StyleBlock(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
-  yyprintf((stderr, "%s\n", "StyleBlock"));  yyText(ctx, ctx->begin, ctx->end);  if (!(YY_BEGIN)) goto l1502;  if (!yy_InStyleTags(ctx)) goto l1502;  yyText(ctx, ctx->begin, ctx->end);  if (!(YY_END)) goto l1502;
-  l1503:;	
-  {  int yypos1504= ctx->pos, yythunkpos1504= ctx->thunkpos;  if (!yy_BlankLine(ctx)) goto l1504;  goto l1503;
-  l1504:;	  ctx->pos= yypos1504; ctx->thunkpos= yythunkpos1504;
+  yyprintf((stderr, "%s\n", "StyleBlock"));  yyText(ctx, ctx->begin, ctx->end);  if (!(YY_BEGIN)) goto l1494;  if (!yy_InStyleTags(ctx)) goto l1494;  yyText(ctx, ctx->begin, ctx->end);  if (!(YY_END)) goto l1494;
+  l1495:;	
+  {  int yypos1496= ctx->pos, yythunkpos1496= ctx->thunkpos;  if (!yy_BlankLine(ctx)) goto l1496;  goto l1495;
+  l1496:;	  ctx->pos= yypos1496; ctx->thunkpos= yythunkpos1496;
   }  yyDo(ctx, yy_1_StyleBlock, ctx->begin, ctx->end);
   yyprintf((stderr, "  ok   %s @ %s\n", "StyleBlock", ctx->buf+ctx->pos));
   return 1;
-  l1502:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1494:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "StyleBlock", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_HtmlBlock(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
-  yyprintf((stderr, "%s\n", "HtmlBlock"));  yyText(ctx, ctx->begin, ctx->end);  if (!(YY_BEGIN)) goto l1505;
-  {  int yypos1506= ctx->pos, yythunkpos1506= ctx->thunkpos;  if (!yy_HtmlBlockInTags(ctx)) goto l1507;  goto l1506;
-  l1507:;	  ctx->pos= yypos1506; ctx->thunkpos= yythunkpos1506;  if (!yy_HtmlComment(ctx)) goto l1508;  goto l1506;
-  l1508:;	  ctx->pos= yypos1506; ctx->thunkpos= yythunkpos1506;  if (!yy_HtmlBlockSelfClosing(ctx)) goto l1505;
+  yyprintf((stderr, "%s\n", "HtmlBlock"));  yyText(ctx, ctx->begin, ctx->end);  if (!(YY_BEGIN)) goto l1497;
+  {  int yypos1498= ctx->pos, yythunkpos1498= ctx->thunkpos;  if (!yy_HtmlBlockInTags(ctx)) goto l1499;  goto l1498;
+  l1499:;	  ctx->pos= yypos1498; ctx->thunkpos= yythunkpos1498;  if (!yy_HtmlComment(ctx)) goto l1500;  goto l1498;
+  l1500:;	  ctx->pos= yypos1498; ctx->thunkpos= yythunkpos1498;  if (!yy_HtmlBlockSelfClosing(ctx)) goto l1497;
   }
-  l1506:;	  yyText(ctx, ctx->begin, ctx->end);  if (!(YY_END)) goto l1505;  if (!yy_BlankLine(ctx)) goto l1505;
-  l1509:;	
-  {  int yypos1510= ctx->pos, yythunkpos1510= ctx->thunkpos;  if (!yy_BlankLine(ctx)) goto l1510;  goto l1509;
-  l1510:;	  ctx->pos= yypos1510; ctx->thunkpos= yythunkpos1510;
+  l1498:;	  yyText(ctx, ctx->begin, ctx->end);  if (!(YY_END)) goto l1497;  if (!yy_BlankLine(ctx)) goto l1497;
+  l1501:;	
+  {  int yypos1502= ctx->pos, yythunkpos1502= ctx->thunkpos;  if (!yy_BlankLine(ctx)) goto l1502;  goto l1501;
+  l1502:;	  ctx->pos= yypos1502; ctx->thunkpos= yythunkpos1502;
   }  yyDo(ctx, yy_1_HtmlBlock, ctx->begin, ctx->end);
   yyprintf((stderr, "  ok   %s @ %s\n", "HtmlBlock", ctx->buf+ctx->pos));
   return 1;
-  l1505:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1497:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "HtmlBlock", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_BulletList(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
   yyprintf((stderr, "%s\n", "BulletList"));
-  {  int yypos1512= ctx->pos, yythunkpos1512= ctx->thunkpos;  if (!yy_Bullet(ctx)) goto l1511;  ctx->pos= yypos1512; ctx->thunkpos= yythunkpos1512;
+  {  int yypos1504= ctx->pos, yythunkpos1504= ctx->thunkpos;  if (!yy_Bullet(ctx)) goto l1503;  ctx->pos= yypos1504; ctx->thunkpos= yythunkpos1504;
   }
-  {  int yypos1513= ctx->pos, yythunkpos1513= ctx->thunkpos;  if (!yy_ListTight(ctx)) goto l1514;  goto l1513;
-  l1514:;	  ctx->pos= yypos1513; ctx->thunkpos= yythunkpos1513;  if (!yy_ListLoose(ctx)) goto l1511;
+  {  int yypos1505= ctx->pos, yythunkpos1505= ctx->thunkpos;  if (!yy_ListTight(ctx)) goto l1506;  goto l1505;
+  l1506:;	  ctx->pos= yypos1505; ctx->thunkpos= yythunkpos1505;  if (!yy_ListLoose(ctx)) goto l1503;
   }
-  l1513:;	  yyDo(ctx, yy_1_BulletList, ctx->begin, ctx->end);
+  l1505:;	  yyDo(ctx, yy_1_BulletList, ctx->begin, ctx->end);
   yyprintf((stderr, "  ok   %s @ %s\n", "BulletList", ctx->buf+ctx->pos));
   return 1;
-  l1511:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1503:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "BulletList", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_OrderedList(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
   yyprintf((stderr, "%s\n", "OrderedList"));
-  {  int yypos1516= ctx->pos, yythunkpos1516= ctx->thunkpos;  if (!yy_Enumerator(ctx)) goto l1515;  ctx->pos= yypos1516; ctx->thunkpos= yythunkpos1516;
+  {  int yypos1508= ctx->pos, yythunkpos1508= ctx->thunkpos;  if (!yy_Enumerator(ctx)) goto l1507;  ctx->pos= yypos1508; ctx->thunkpos= yythunkpos1508;
   }
-  {  int yypos1517= ctx->pos, yythunkpos1517= ctx->thunkpos;  if (!yy_ListTight(ctx)) goto l1518;  goto l1517;
-  l1518:;	  ctx->pos= yypos1517; ctx->thunkpos= yythunkpos1517;  if (!yy_ListLoose(ctx)) goto l1515;
+  {  int yypos1509= ctx->pos, yythunkpos1509= ctx->thunkpos;  if (!yy_ListTight(ctx)) goto l1510;  goto l1509;
+  l1510:;	  ctx->pos= yypos1509; ctx->thunkpos= yythunkpos1509;  if (!yy_ListLoose(ctx)) goto l1507;
   }
-  l1517:;	  yyDo(ctx, yy_1_OrderedList, ctx->begin, ctx->end);
+  l1509:;	  yyDo(ctx, yy_1_OrderedList, ctx->begin, ctx->end);
   yyprintf((stderr, "  ok   %s @ %s\n", "OrderedList", ctx->buf+ctx->pos));
   return 1;
-  l1515:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1507:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "OrderedList", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_Heading(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
   yyprintf((stderr, "%s\n", "Heading"));
-  {  int yypos1520= ctx->pos, yythunkpos1520= ctx->thunkpos;  if (!yy_SetextHeading(ctx)) goto l1521;  goto l1520;
-  l1521:;	  ctx->pos= yypos1520; ctx->thunkpos= yythunkpos1520;  if (!yy_AtxHeading(ctx)) goto l1519;
+  {  int yypos1512= ctx->pos, yythunkpos1512= ctx->thunkpos;  if (!yy_SetextHeading(ctx)) goto l1513;  goto l1512;
+  l1513:;	  ctx->pos= yypos1512; ctx->thunkpos= yythunkpos1512;  if (!yy_AtxHeading(ctx)) goto l1511;
   }
-  l1520:;	
+  l1512:;	
   yyprintf((stderr, "  ok   %s @ %s\n", "Heading", ctx->buf+ctx->pos));
   return 1;
-  l1519:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1511:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "Heading", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_HorizontalRule(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
-  yyprintf((stderr, "%s\n", "HorizontalRule"));  if (!yy_NonindentSpace(ctx)) goto l1522;
-  {  int yypos1523= ctx->pos, yythunkpos1523= ctx->thunkpos;  if (!yymatchChar(ctx, '*')) goto l1524;  if (!yy_Sp(ctx)) goto l1524;  if (!yymatchChar(ctx, '*')) goto l1524;  if (!yy_Sp(ctx)) goto l1524;  if (!yymatchChar(ctx, '*')) goto l1524;
-  l1525:;	
-  {  int yypos1526= ctx->pos, yythunkpos1526= ctx->thunkpos;  if (!yy_Sp(ctx)) goto l1526;  if (!yymatchChar(ctx, '*')) goto l1526;  goto l1525;
-  l1526:;	  ctx->pos= yypos1526; ctx->thunkpos= yythunkpos1526;
-  }  goto l1523;
-  l1524:;	  ctx->pos= yypos1523; ctx->thunkpos= yythunkpos1523;  if (!yymatchChar(ctx, '-')) goto l1527;  if (!yy_Sp(ctx)) goto l1527;  if (!yymatchChar(ctx, '-')) goto l1527;  if (!yy_Sp(ctx)) goto l1527;  if (!yymatchChar(ctx, '-')) goto l1527;
-  l1528:;	
-  {  int yypos1529= ctx->pos, yythunkpos1529= ctx->thunkpos;  if (!yy_Sp(ctx)) goto l1529;  if (!yymatchChar(ctx, '-')) goto l1529;  goto l1528;
-  l1529:;	  ctx->pos= yypos1529; ctx->thunkpos= yythunkpos1529;
-  }  goto l1523;
-  l1527:;	  ctx->pos= yypos1523; ctx->thunkpos= yythunkpos1523;  if (!yymatchChar(ctx, '_')) goto l1522;  if (!yy_Sp(ctx)) goto l1522;  if (!yymatchChar(ctx, '_')) goto l1522;  if (!yy_Sp(ctx)) goto l1522;  if (!yymatchChar(ctx, '_')) goto l1522;
-  l1530:;	
-  {  int yypos1531= ctx->pos, yythunkpos1531= ctx->thunkpos;  if (!yy_Sp(ctx)) goto l1531;  if (!yymatchChar(ctx, '_')) goto l1531;  goto l1530;
-  l1531:;	  ctx->pos= yypos1531; ctx->thunkpos= yythunkpos1531;
+  yyprintf((stderr, "%s\n", "HorizontalRule"));  if (!yy_NonindentSpace(ctx)) goto l1514;
+  {  int yypos1515= ctx->pos, yythunkpos1515= ctx->thunkpos;  if (!yymatchChar(ctx, '*')) goto l1516;  if (!yy_Sp(ctx)) goto l1516;  if (!yymatchChar(ctx, '*')) goto l1516;  if (!yy_Sp(ctx)) goto l1516;  if (!yymatchChar(ctx, '*')) goto l1516;
+  l1517:;	
+  {  int yypos1518= ctx->pos, yythunkpos1518= ctx->thunkpos;  if (!yy_Sp(ctx)) goto l1518;  if (!yymatchChar(ctx, '*')) goto l1518;  goto l1517;
+  l1518:;	  ctx->pos= yypos1518; ctx->thunkpos= yythunkpos1518;
+  }  goto l1515;
+  l1516:;	  ctx->pos= yypos1515; ctx->thunkpos= yythunkpos1515;  if (!yymatchChar(ctx, '-')) goto l1519;  if (!yy_Sp(ctx)) goto l1519;  if (!yymatchChar(ctx, '-')) goto l1519;  if (!yy_Sp(ctx)) goto l1519;  if (!yymatchChar(ctx, '-')) goto l1519;
+  l1520:;	
+  {  int yypos1521= ctx->pos, yythunkpos1521= ctx->thunkpos;  if (!yy_Sp(ctx)) goto l1521;  if (!yymatchChar(ctx, '-')) goto l1521;  goto l1520;
+  l1521:;	  ctx->pos= yypos1521; ctx->thunkpos= yythunkpos1521;
+  }  goto l1515;
+  l1519:;	  ctx->pos= yypos1515; ctx->thunkpos= yythunkpos1515;  if (!yymatchChar(ctx, '_')) goto l1514;  if (!yy_Sp(ctx)) goto l1514;  if (!yymatchChar(ctx, '_')) goto l1514;  if (!yy_Sp(ctx)) goto l1514;  if (!yymatchChar(ctx, '_')) goto l1514;
+  l1522:;	
+  {  int yypos1523= ctx->pos, yythunkpos1523= ctx->thunkpos;  if (!yy_Sp(ctx)) goto l1523;  if (!yymatchChar(ctx, '_')) goto l1523;  goto l1522;
+  l1523:;	  ctx->pos= yypos1523; ctx->thunkpos= yythunkpos1523;
   }
   }
-  l1523:;	  if (!yy_Sp(ctx)) goto l1522;  if (!yy_Newline(ctx)) goto l1522;  if (!yy_BlankLine(ctx)) goto l1522;
-  l1532:;	
-  {  int yypos1533= ctx->pos, yythunkpos1533= ctx->thunkpos;  if (!yy_BlankLine(ctx)) goto l1533;  goto l1532;
-  l1533:;	  ctx->pos= yypos1533; ctx->thunkpos= yythunkpos1533;
+  l1515:;	  if (!yy_Sp(ctx)) goto l1514;  if (!yy_Newline(ctx)) goto l1514;  if (!yy_BlankLine(ctx)) goto l1514;
+  l1524:;	
+  {  int yypos1525= ctx->pos, yythunkpos1525= ctx->thunkpos;  if (!yy_BlankLine(ctx)) goto l1525;  goto l1524;
+  l1525:;	  ctx->pos= yypos1525; ctx->thunkpos= yythunkpos1525;
   }  yyDo(ctx, yy_1_HorizontalRule, ctx->begin, ctx->end);
   yyprintf((stderr, "  ok   %s @ %s\n", "HorizontalRule", ctx->buf+ctx->pos));
   return 1;
-  l1522:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1514:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "HorizontalRule", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_Reference(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;  yyDo(ctx, yyPush, 3, 0);
-  yyprintf((stderr, "%s\n", "Reference"));  if (!yy_NonindentSpace(ctx)) goto l1534;
-  {  int yypos1535= ctx->pos, yythunkpos1535= ctx->thunkpos;  if (!yymatchString(ctx, "[]")) goto l1535;  goto l1534;
-  l1535:;	  ctx->pos= yypos1535; ctx->thunkpos= yythunkpos1535;
-  }  if (!yy_Label(ctx)) goto l1534;  yyDo(ctx, yySet, -3, 0);  if (!yymatchChar(ctx, ':')) goto l1534;  if (!yy_Spnl(ctx)) goto l1534;  if (!yy_RefSrc(ctx)) goto l1534;  yyDo(ctx, yySet, -2, 0);  if (!yy_RefTitle(ctx)) goto l1534;  yyDo(ctx, yySet, -1, 0);  if (!yy_BlankLine(ctx)) goto l1534;
-  l1536:;	
-  {  int yypos1537= ctx->pos, yythunkpos1537= ctx->thunkpos;  if (!yy_BlankLine(ctx)) goto l1537;  goto l1536;
-  l1537:;	  ctx->pos= yypos1537; ctx->thunkpos= yythunkpos1537;
+  yyprintf((stderr, "%s\n", "Reference"));  if (!yy_NonindentSpace(ctx)) goto l1526;
+  {  int yypos1527= ctx->pos, yythunkpos1527= ctx->thunkpos;  if (!yymatchString(ctx, "[]")) goto l1527;  goto l1526;
+  l1527:;	  ctx->pos= yypos1527; ctx->thunkpos= yythunkpos1527;
+  }  if (!yy_Label(ctx)) goto l1526;  yyDo(ctx, yySet, -3, 0);  if (!yymatchChar(ctx, ':')) goto l1526;  if (!yy_Spnl(ctx)) goto l1526;  if (!yy_RefSrc(ctx)) goto l1526;  yyDo(ctx, yySet, -2, 0);  if (!yy_RefTitle(ctx)) goto l1526;  yyDo(ctx, yySet, -1, 0);  if (!yy_BlankLine(ctx)) goto l1526;
+  l1528:;	
+  {  int yypos1529= ctx->pos, yythunkpos1529= ctx->thunkpos;  if (!yy_BlankLine(ctx)) goto l1529;  goto l1528;
+  l1529:;	  ctx->pos= yypos1529; ctx->thunkpos= yythunkpos1529;
   }  yyDo(ctx, yy_1_Reference, ctx->begin, ctx->end);
   yyprintf((stderr, "  ok   %s @ %s\n", "Reference", ctx->buf+ctx->pos));  yyDo(ctx, yyPop, 3, 0);
   return 1;
-  l1534:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1526:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "Reference", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_Note(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;  yyDo(ctx, yyPush, 2, 0);
-  yyprintf((stderr, "%s\n", "Note"));  yyText(ctx, ctx->begin, ctx->end);  if (!( extension(EXT_NOTES) )) goto l1538;  if (!yy_NonindentSpace(ctx)) goto l1538;  if (!yy_RawNoteReference(ctx)) goto l1538;  yyDo(ctx, yySet, -2, 0);  if (!yymatchChar(ctx, ':')) goto l1538;  if (!yy_Sp(ctx)) goto l1538;  if (!yy_StartList(ctx)) goto l1538;  yyDo(ctx, yySet, -1, 0);  if (!yy_RawNoteBlock(ctx)) goto l1538;  yyDo(ctx, yy_1_Note, ctx->begin, ctx->end);
-  l1539:;	
-  {  int yypos1540= ctx->pos, yythunkpos1540= ctx->thunkpos;
-  {  int yypos1541= ctx->pos, yythunkpos1541= ctx->thunkpos;  if (!yy_Indent(ctx)) goto l1540;  ctx->pos= yypos1541; ctx->thunkpos= yythunkpos1541;
-  }  if (!yy_RawNoteBlock(ctx)) goto l1540;  yyDo(ctx, yy_2_Note, ctx->begin, ctx->end);  goto l1539;
-  l1540:;	  ctx->pos= yypos1540; ctx->thunkpos= yythunkpos1540;
+  yyprintf((stderr, "%s\n", "Note"));  yyText(ctx, ctx->begin, ctx->end);  if (!( extension(EXT_NOTES) )) goto l1530;  if (!yy_NonindentSpace(ctx)) goto l1530;  if (!yy_RawNoteReference(ctx)) goto l1530;  yyDo(ctx, yySet, -2, 0);  if (!yymatchChar(ctx, ':')) goto l1530;  if (!yy_Sp(ctx)) goto l1530;  if (!yy_StartList(ctx)) goto l1530;  yyDo(ctx, yySet, -1, 0);  if (!yy_RawNoteBlock(ctx)) goto l1530;  yyDo(ctx, yy_1_Note, ctx->begin, ctx->end);
+  l1531:;	
+  {  int yypos1532= ctx->pos, yythunkpos1532= ctx->thunkpos;
+  {  int yypos1533= ctx->pos, yythunkpos1533= ctx->thunkpos;  if (!yy_Indent(ctx)) goto l1532;  ctx->pos= yypos1533; ctx->thunkpos= yythunkpos1533;
+  }  if (!yy_RawNoteBlock(ctx)) goto l1532;  yyDo(ctx, yy_2_Note, ctx->begin, ctx->end);  goto l1531;
+  l1532:;	  ctx->pos= yypos1532; ctx->thunkpos= yythunkpos1532;
   }  yyDo(ctx, yy_3_Note, ctx->begin, ctx->end);
   yyprintf((stderr, "  ok   %s @ %s\n", "Note", ctx->buf+ctx->pos));  yyDo(ctx, yyPop, 2, 0);
   return 1;
-  l1538:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1530:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "Note", ctx->buf+ctx->pos));
+  return 0;
+}
+YY_RULE(int) yy_CodeBlock(yycontext *ctx)
+{  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
+  yyprintf((stderr, "%s\n", "CodeBlock"));  yyText(ctx, ctx->begin, ctx->end);  if (!( extension(EXT_CODEBLOCK) )) goto l1534;  if (!yymatchString(ctx, "~~~")) goto l1534;  if (!yy_Newline(ctx)) goto l1534;  yyText(ctx, ctx->begin, ctx->end);  if (!(YY_BEGIN)) goto l1534;
+  l1535:;	
+  {  int yypos1536= ctx->pos, yythunkpos1536= ctx->thunkpos;
+  {  int yypos1537= ctx->pos, yythunkpos1537= ctx->thunkpos;  if (!yy_Newline(ctx)) goto l1537;  if (!yymatchString(ctx, "~~~")) goto l1537;  goto l1536;
+  l1537:;	  ctx->pos= yypos1537; ctx->thunkpos= yythunkpos1537;
+  }  if (!yymatchDot(ctx)) goto l1536;  goto l1535;
+  l1536:;	  ctx->pos= yypos1536; ctx->thunkpos= yythunkpos1536;
+  }  yyText(ctx, ctx->begin, ctx->end);  if (!(YY_END)) goto l1534;  if (!yy_Newline(ctx)) goto l1534;  if (!yymatchString(ctx, "~~~")) goto l1534;
+  l1538:;	
+  {  int yypos1539= ctx->pos, yythunkpos1539= ctx->thunkpos;  if (!yy_BlankLine(ctx)) goto l1539;  goto l1538;
+  l1539:;	  ctx->pos= yypos1539; ctx->thunkpos= yythunkpos1539;
+  }  yyDo(ctx, yy_1_CodeBlock, ctx->begin, ctx->end);
+  yyprintf((stderr, "  ok   %s @ %s\n", "CodeBlock", ctx->buf+ctx->pos));
+  return 1;
+  l1534:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  yyprintf((stderr, "  fail %s @ %s\n", "CodeBlock", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_Verbatim(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;  yyDo(ctx, yyPush, 1, 0);
-  yyprintf((stderr, "%s\n", "Verbatim"));  if (!yy_StartList(ctx)) goto l1542;  yyDo(ctx, yySet, -1, 0);  if (!yy_VerbatimChunk(ctx)) goto l1542;  yyDo(ctx, yy_1_Verbatim, ctx->begin, ctx->end);
-  l1543:;	
-  {  int yypos1544= ctx->pos, yythunkpos1544= ctx->thunkpos;  if (!yy_VerbatimChunk(ctx)) goto l1544;  yyDo(ctx, yy_1_Verbatim, ctx->begin, ctx->end);  goto l1543;
-  l1544:;	  ctx->pos= yypos1544; ctx->thunkpos= yythunkpos1544;
+  yyprintf((stderr, "%s\n", "Verbatim"));  if (!yy_StartList(ctx)) goto l1540;  yyDo(ctx, yySet, -1, 0);  if (!yy_VerbatimChunk(ctx)) goto l1540;  yyDo(ctx, yy_1_Verbatim, ctx->begin, ctx->end);
+  l1541:;	
+  {  int yypos1542= ctx->pos, yythunkpos1542= ctx->thunkpos;  if (!yy_VerbatimChunk(ctx)) goto l1542;  yyDo(ctx, yy_1_Verbatim, ctx->begin, ctx->end);  goto l1541;
+  l1542:;	  ctx->pos= yypos1542; ctx->thunkpos= yythunkpos1542;
   }  yyDo(ctx, yy_2_Verbatim, ctx->begin, ctx->end);
   yyprintf((stderr, "  ok   %s @ %s\n", "Verbatim", ctx->buf+ctx->pos));  yyDo(ctx, yyPop, 1, 0);
   return 1;
-  l1542:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1540:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "Verbatim", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_BlockQuote(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;  yyDo(ctx, yyPush, 1, 0);
-  yyprintf((stderr, "%s\n", "BlockQuote"));  if (!yy_BlockQuoteRaw(ctx)) goto l1545;  yyDo(ctx, yySet, -1, 0);  yyDo(ctx, yy_1_BlockQuote, ctx->begin, ctx->end);
+  yyprintf((stderr, "%s\n", "BlockQuote"));  if (!yy_BlockQuoteRaw(ctx)) goto l1543;  yyDo(ctx, yySet, -1, 0);  yyDo(ctx, yy_1_BlockQuote, ctx->begin, ctx->end);
   yyprintf((stderr, "  ok   %s @ %s\n", "BlockQuote", ctx->buf+ctx->pos));  yyDo(ctx, yyPop, 1, 0);
   return 1;
-  l1545:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1543:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "BlockQuote", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_BlankLine(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
-  yyprintf((stderr, "%s\n", "BlankLine"));  if (!yy_Sp(ctx)) goto l1546;  if (!yy_Newline(ctx)) goto l1546;
+  yyprintf((stderr, "%s\n", "BlankLine"));  if (!yy_Sp(ctx)) goto l1544;  if (!yy_Newline(ctx)) goto l1544;
   yyprintf((stderr, "  ok   %s @ %s\n", "BlankLine", ctx->buf+ctx->pos));
   return 1;
-  l1546:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1544:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "BlankLine", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_Block(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
   yyprintf((stderr, "%s\n", "Block"));
+  l1546:;	
+  {  int yypos1547= ctx->pos, yythunkpos1547= ctx->thunkpos;  if (!yy_BlankLine(ctx)) goto l1547;  goto l1546;
+  l1547:;	  ctx->pos= yypos1547; ctx->thunkpos= yythunkpos1547;
+  }
+  {  int yypos1548= ctx->pos, yythunkpos1548= ctx->thunkpos;  if (!yy_BlockQuote(ctx)) goto l1549;  goto l1548;
+  l1549:;	  ctx->pos= yypos1548; ctx->thunkpos= yythunkpos1548;  if (!yy_Verbatim(ctx)) goto l1550;  goto l1548;
+  l1550:;	  ctx->pos= yypos1548; ctx->thunkpos= yythunkpos1548;  if (!yy_CodeBlock(ctx)) goto l1551;  goto l1548;
+  l1551:;	  ctx->pos= yypos1548; ctx->thunkpos= yythunkpos1548;  if (!yy_Note(ctx)) goto l1552;  goto l1548;
+  l1552:;	  ctx->pos= yypos1548; ctx->thunkpos= yythunkpos1548;  if (!yy_Reference(ctx)) goto l1553;  goto l1548;
+  l1553:;	  ctx->pos= yypos1548; ctx->thunkpos= yythunkpos1548;  if (!yy_HorizontalRule(ctx)) goto l1554;  goto l1548;
+  l1554:;	  ctx->pos= yypos1548; ctx->thunkpos= yythunkpos1548;  if (!yy_Heading(ctx)) goto l1555;  goto l1548;
+  l1555:;	  ctx->pos= yypos1548; ctx->thunkpos= yythunkpos1548;  if (!yy_OrderedList(ctx)) goto l1556;  goto l1548;
+  l1556:;	  ctx->pos= yypos1548; ctx->thunkpos= yythunkpos1548;  if (!yy_BulletList(ctx)) goto l1557;  goto l1548;
+  l1557:;	  ctx->pos= yypos1548; ctx->thunkpos= yythunkpos1548;  if (!yy_HtmlBlock(ctx)) goto l1558;  goto l1548;
+  l1558:;	  ctx->pos= yypos1548; ctx->thunkpos= yythunkpos1548;  if (!yy_StyleBlock(ctx)) goto l1559;  goto l1548;
+  l1559:;	  ctx->pos= yypos1548; ctx->thunkpos= yythunkpos1548;  if (!yy_Audio(ctx)) goto l1560;  goto l1548;
+  l1560:;	  ctx->pos= yypos1548; ctx->thunkpos= yythunkpos1548;  if (!yy_Video(ctx)) goto l1561;  goto l1548;
+  l1561:;	  ctx->pos= yypos1548; ctx->thunkpos= yythunkpos1548;  if (!yy_Para(ctx)) goto l1562;  goto l1548;
+  l1562:;	  ctx->pos= yypos1548; ctx->thunkpos= yythunkpos1548;  if (!yy_Plain(ctx)) goto l1545;
+  }
   l1548:;	
-  {  int yypos1549= ctx->pos, yythunkpos1549= ctx->thunkpos;  if (!yy_BlankLine(ctx)) goto l1549;  goto l1548;
-  l1549:;	  ctx->pos= yypos1549; ctx->thunkpos= yythunkpos1549;
-  }
-  {  int yypos1550= ctx->pos, yythunkpos1550= ctx->thunkpos;  if (!yy_BlockQuote(ctx)) goto l1551;  goto l1550;
-  l1551:;	  ctx->pos= yypos1550; ctx->thunkpos= yythunkpos1550;  if (!yy_Verbatim(ctx)) goto l1552;  goto l1550;
-  l1552:;	  ctx->pos= yypos1550; ctx->thunkpos= yythunkpos1550;  if (!yy_Note(ctx)) goto l1553;  goto l1550;
-  l1553:;	  ctx->pos= yypos1550; ctx->thunkpos= yythunkpos1550;  if (!yy_Reference(ctx)) goto l1554;  goto l1550;
-  l1554:;	  ctx->pos= yypos1550; ctx->thunkpos= yythunkpos1550;  if (!yy_HorizontalRule(ctx)) goto l1555;  goto l1550;
-  l1555:;	  ctx->pos= yypos1550; ctx->thunkpos= yythunkpos1550;  if (!yy_Heading(ctx)) goto l1556;  goto l1550;
-  l1556:;	  ctx->pos= yypos1550; ctx->thunkpos= yythunkpos1550;  if (!yy_OrderedList(ctx)) goto l1557;  goto l1550;
-  l1557:;	  ctx->pos= yypos1550; ctx->thunkpos= yythunkpos1550;  if (!yy_BulletList(ctx)) goto l1558;  goto l1550;
-  l1558:;	  ctx->pos= yypos1550; ctx->thunkpos= yythunkpos1550;  if (!yy_HtmlBlock(ctx)) goto l1559;  goto l1550;
-  l1559:;	  ctx->pos= yypos1550; ctx->thunkpos= yythunkpos1550;  if (!yy_StyleBlock(ctx)) goto l1560;  goto l1550;
-  l1560:;	  ctx->pos= yypos1550; ctx->thunkpos= yythunkpos1550;  if (!yy_Audio(ctx)) goto l1561;  goto l1550;
-  l1561:;	  ctx->pos= yypos1550; ctx->thunkpos= yythunkpos1550;  if (!yy_Video(ctx)) goto l1562;  goto l1550;
-  l1562:;	  ctx->pos= yypos1550; ctx->thunkpos= yythunkpos1550;  if (!yy_Para(ctx)) goto l1563;  goto l1550;
-  l1563:;	  ctx->pos= yypos1550; ctx->thunkpos= yythunkpos1550;  if (!yy_Plain(ctx)) goto l1547;
-  }
-  l1550:;	
   yyprintf((stderr, "  ok   %s @ %s\n", "Block", ctx->buf+ctx->pos));
   return 1;
-  l1547:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1545:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "Block", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_StartList(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
   yyprintf((stderr, "%s\n", "StartList"));
-  {  int yypos1565= ctx->pos, yythunkpos1565= ctx->thunkpos;  if (!yymatchDot(ctx)) goto l1564;  ctx->pos= yypos1565; ctx->thunkpos= yythunkpos1565;
+  {  int yypos1564= ctx->pos, yythunkpos1564= ctx->thunkpos;  if (!yymatchDot(ctx)) goto l1563;  ctx->pos= yypos1564; ctx->thunkpos= yythunkpos1564;
   }  yyDo(ctx, yy_1_StartList, ctx->begin, ctx->end);
   yyprintf((stderr, "  ok   %s @ %s\n", "StartList", ctx->buf+ctx->pos));
   return 1;
-  l1564:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1563:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "StartList", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_BOM(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;
-  yyprintf((stderr, "%s\n", "BOM"));  if (!yymatchString(ctx, "\357\273\277")) goto l1566;
+  yyprintf((stderr, "%s\n", "BOM"));  if (!yymatchString(ctx, "\357\273\277")) goto l1565;
   yyprintf((stderr, "  ok   %s @ %s\n", "BOM", ctx->buf+ctx->pos));
   return 1;
-  l1566:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1565:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "BOM", ctx->buf+ctx->pos));
   return 0;
 }
 YY_RULE(int) yy_Doc(yycontext *ctx)
 {  int yypos0= ctx->pos, yythunkpos0= ctx->thunkpos;  yyDo(ctx, yyPush, 1, 0);
   yyprintf((stderr, "%s\n", "Doc"));
-  {  int yypos1568= ctx->pos, yythunkpos1568= ctx->thunkpos;  if (!yy_BOM(ctx)) goto l1568;  goto l1569;
-  l1568:;	  ctx->pos= yypos1568; ctx->thunkpos= yythunkpos1568;
+  {  int yypos1567= ctx->pos, yythunkpos1567= ctx->thunkpos;  if (!yy_BOM(ctx)) goto l1567;  goto l1568;
+  l1567:;	  ctx->pos= yypos1567; ctx->thunkpos= yythunkpos1567;
   }
-  l1569:;	  if (!yy_StartList(ctx)) goto l1567;  yyDo(ctx, yySet, -1, 0);
-  l1570:;	
-  {  int yypos1571= ctx->pos, yythunkpos1571= ctx->thunkpos;  if (!yy_Block(ctx)) goto l1571;  yyDo(ctx, yy_1_Doc, ctx->begin, ctx->end);  goto l1570;
-  l1571:;	  ctx->pos= yypos1571; ctx->thunkpos= yythunkpos1571;
+  l1568:;	  if (!yy_StartList(ctx)) goto l1566;  yyDo(ctx, yySet, -1, 0);
+  l1569:;	
+  {  int yypos1570= ctx->pos, yythunkpos1570= ctx->thunkpos;  if (!yy_Block(ctx)) goto l1570;  yyDo(ctx, yy_1_Doc, ctx->begin, ctx->end);  goto l1569;
+  l1570:;	  ctx->pos= yypos1570; ctx->thunkpos= yythunkpos1570;
   }  yyDo(ctx, yy_2_Doc, ctx->begin, ctx->end);
   yyprintf((stderr, "  ok   %s @ %s\n", "Doc", ctx->buf+ctx->pos));  yyDo(ctx, yyPop, 1, 0);
   return 1;
-  l1567:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
+  l1566:;	  ctx->pos= yypos0; ctx->thunkpos= yythunkpos0;
   yyprintf((stderr, "  fail %s @ %s\n", "Doc", ctx->buf+ctx->pos));
   return 0;
 }

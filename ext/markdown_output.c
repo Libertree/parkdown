@@ -364,7 +364,7 @@ static void print_html_endnotes(GString *out) {
         g_string_append_printf(out, "<li id=\"fn%d\">\n", counter);
         padded = 2;
         print_html_element_list(out, note_elt->children, false);
-        g_string_append_printf(out, " <a href=\"#fnref%d\" title=\"Jump back to reference\">[back]</a>", counter);
+        g_string_append_printf(out, " <a href=\"#fnref%d\" title=\"Jump back to reference\">[⤴]</a>", counter);
         pad(out, 1);
         g_string_append_printf(out, "</li>");
         note = note->next;
@@ -1192,9 +1192,6 @@ void print_element_list(GString *out, element *elt, int format, int exts) {
         }
         break;
     case LATEX_FORMAT:
-        if (extensions & EXT_STRIKE) {
-          g_string_append_printf(out, "\\usepackage{ulem}\n");
-        }
         print_latex_element_list(out, elt);
         break;
     case GROFF_MM_FORMAT:
