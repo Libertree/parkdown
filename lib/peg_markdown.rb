@@ -46,6 +46,9 @@ class PEGMarkdown
   # Set true to enable audio/video extension.
   attr_accessor :media
 
+  # Set true to enable codeblock extension.
+  attr_accessor :codeblock
+
   # Create a new Markdown processor. The +text+ argument is a string
   # containing Markdown text. Variable other arguments may be supplied to
   # set various processing options:
@@ -62,6 +65,7 @@ class PEGMarkdown
   # * <tt>:hard_wrap</tt> - Insert line breaks inside paragraphs.
   # * <tt>:no_images</tt> - Treat image links as if they were plain links.
   # * <tt>:media</tt> - Replace audio/video links with HTML5 audio/video objects.
+  # * <tt>:codeblock</tt> - Render block enclosed in ~~~ as verbatim section.
   #
   def initialize(text, *extensions)
     @text = text
@@ -74,6 +78,7 @@ class PEGMarkdown
     @hard_wrap = false
     @no_images = false
     @media = false
+    @codeblock = false
     extensions.each { |e| send("#{e}=", true) }
   end
 
