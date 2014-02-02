@@ -1,6 +1,6 @@
 require 'rake/clean'
 require 'rake/packagetask'
-require 'rake/gempackagetask'
+require 'rubygems/package_task'
 
 task :default => :test
 
@@ -32,7 +32,7 @@ spec =
     s.rubyforge_project = 'wink'
   end
 
-  Rake::GemPackageTask.new(spec) do |p|
+  Gem::PackageTask.new(spec) do |p|
     p.gem_spec = spec
     p.need_tar_gz = true
     p.need_tar = false
