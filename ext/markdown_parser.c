@@ -1152,10 +1152,10 @@ YY_ACTION(void) yy_1_Image(yycontext *ctx, char *yytext, int yyleng)
 #define yypos ctx->pos
 #define yythunkpos ctx->thunkpos
   yyprintf((stderr, "do yy_1_Image\n"));
-   if (extension(EXT_NO_IMAGES)) {
-              yy->key = LINK;
-          } else if (yy->key == LINK) {
+   if (yy->key == LINK) {
+            if (!extension(EXT_NO_IMAGES)) {
               yy->key = IMAGE;
+            }
           } else {
               element *result;
               result = yy;
