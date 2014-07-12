@@ -8,8 +8,12 @@ MARKDOWN_TEST_DIR = "#{File.dirname(__FILE__)}/MarkdownTest_1.0.3"
 class MarkdownTest < Test::Unit::TestCase
 
   def test_that_extension_methods_are_present_on_markdown_class
-    assert Markdown.instance_methods.include?('to_html'),
+    methods = Markdown.instance_methods
+    assert(
+      # Symbol in Ruby 1.9+, String in 1.8
+      methods.include?(:to_html) || methods.include?('to_html'),
       "Markdown class should respond to #to_html"
+    )
   end
 
   def test_that_simple_one_liner_goes_to_html
@@ -53,7 +57,7 @@ class MarkdownTest < Test::Unit::TestCase
     assert_nothing_raised(ArgumentError) { markdown.to_html(true) }
   end
 
-  
+
 
   # Build tests for each file in the MarkdownTest test suite
 
