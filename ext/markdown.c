@@ -35,6 +35,8 @@ rb_markdown_to_html(int argc, VALUE *argv, VALUE self)
         extensions = extensions | EXT_CODEBLOCK ;
     if ( rb_funcall(self, rb_intern("hashtags"), 0) == Qtrue )
         extensions = extensions | EXT_HASHTAGS ;
+    if ( rb_funcall(self, rb_intern("usernames"), 0) == Qtrue )
+        extensions = extensions | EXT_USERNAMES ;
 
     char *html = markdown_to_string(ptext, extensions, HTML_FORMAT);
     VALUE result = rb_str_new2(html);

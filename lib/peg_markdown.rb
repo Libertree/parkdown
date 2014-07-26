@@ -52,6 +52,9 @@ class PEGMarkdown
   # Set true to enable hashtags extension.
   attr_accessor :hashtags
 
+  # Set true to enable usernames extension.
+  attr_accessor :usernames
+
   # Create a new Markdown processor. The +text+ argument is a string
   # containing Markdown text. Variable other arguments may be supplied to
   # set various processing options:
@@ -70,6 +73,7 @@ class PEGMarkdown
   # * <tt>:media</tt> - Replace audio/video links with HTML5 audio/video objects.
   # * <tt>:codeblock</tt> - Render block enclosed in ~~~ as verbatim section.
   # * <tt>:hashtags</tt> - Mark hashtags.
+  # * <tt>:usernames</tt> - Mark usernames.
   #
   def initialize(text, *extensions)
     @text = text
@@ -84,6 +88,7 @@ class PEGMarkdown
     @media = false
     @codeblock = false
     @hashtags = false
+    @usernames = false
     extensions.each { |e| send("#{e}=", true) }
   end
 
