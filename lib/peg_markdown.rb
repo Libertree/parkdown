@@ -55,6 +55,9 @@ class PEGMarkdown
   # Set true to enable usernames extension.
   attr_accessor :usernames
 
+  # Set true to enable spoilerblock extension.
+  attr_accessor :spoilerblock
+
   # Create a new Markdown processor. The +text+ argument is a string
   # containing Markdown text. Variable other arguments may be supplied to
   # set various processing options:
@@ -74,6 +77,7 @@ class PEGMarkdown
   # * <tt>:codeblock</tt> - Render block enclosed in ~~~ as verbatim section.
   # * <tt>:hashtags</tt> - Mark hashtags.
   # * <tt>:usernames</tt> - Mark usernames.
+  # * <tt>:spoilerblock</tt> - Render block prefixed with ?> as spoiler section.
   #
   def initialize(text, *extensions)
     @text = text
@@ -89,6 +93,7 @@ class PEGMarkdown
     @codeblock = false
     @hashtags = false
     @usernames = false
+    @spoilerblock = false
     extensions.each { |e| send("#{e}=", true) }
   end
 
