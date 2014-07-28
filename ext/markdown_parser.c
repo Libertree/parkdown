@@ -1186,8 +1186,11 @@ YY_ACTION(void) yy_1_HashtagLink(yycontext *ctx, char *yytext, int yyleng)
 #define yypos ctx->pos
 #define yythunkpos ctx->thunkpos
   yyprintf((stderr, "do yy_1_HashtagLink\n"));
-   yy = mk_str(yytext);
+   char *tag = malloc(strlen(yytext) + 1);
+                sprintf(tag, "#%s", yytext);
+                yy = mk_str(tag);
                 yy->key = HASHTAG;
+                free(tag);
               ;
 #undef yythunkpos
 #undef yypos
