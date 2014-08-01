@@ -1,10 +1,10 @@
 # encoding: utf-8
 Gem::Specification.new do |s|
   s.name = 'rpeg-markdown'
-  s.version = '1.4.17'
+  s.version = '1.4.18'
   s.summary = "Fast Markdown implementation"
   s.description = ''
-  s.date = '2014-07-28'
+  s.date = '2014-08-01'
   s.email = 'spam@elephly.net'
   s.homepage = 'http://github.com/rekado/rpeg-markdown'
   s.authors = ["Ryan Tomayko", "Rekado"]
