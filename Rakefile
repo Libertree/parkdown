@@ -9,26 +9,26 @@ VERS = '1.4.21'
 
 spec =
   Gem::Specification.new do |s|
-    s.name              = "rpeg-markdown"
+    s.name              = "parkdown"
     s.version           = VERS
     s.summary           = "Fast Markdown implementation"
     s.files             = FileList[
                             'README.markdown','LICENSE','Rakefile',
                             '{lib,ext,test}/**.rb','ext/*.{c,h}',
                             'test/MarkdownTest*/**/*',
-                            'bin/rpeg-markdown'
+                            'bin/parkdown'
                           ]
     s.bindir            = 'bin'
-    s.executables       << 'rpeg-markdown'
+    s.executables       << 'parkdown'
     s.require_path      = 'lib'
     s.has_rdoc          = true
     s.extra_rdoc_files  = ['LICENSE']
     s.test_files        = FileList['test/markdown_test.rb']
     s.extensions        = ['ext/extconf.rb']
 
-    s.author            = 'Ryan Tomayko'
-    s.email             = 'r@tomayko.com'
-    s.homepage          = 'http://github.com/rtomayko/rpeg-markdown'
+    s.author            = 'rekado'
+    s.email             = 'spam@elephly.net'
+    s.homepage          = 'http://github.com/rekado/parkdown'
     s.rubyforge_project = 'wink'
   end
 
@@ -102,7 +102,7 @@ end
 
 desc "Run conformance tests (MARKDOWN_TEST_VER=#{ENV['MARKDOWN_TEST_VER'] ||= '1.0.3'})"
 task 'test:conformance' => [:build] do |t|
-  script = "#{pwd}/bin/rpeg-markdown"
+  script = "#{pwd}/bin/parkdown"
   test_version = ENV['MARKDOWN_TEST_VER']
   chdir("test/MarkdownTest_#{test_version}") do
     sh "./MarkdownTest.pl --script='#{script}' --tidy"
@@ -159,12 +159,12 @@ end
 # Rubyforge
 # ==========================================================
 
-PKGNAME = "pkg/rpeg-markdown-#{VERS}"
+PKGNAME = "pkg/parkdown-#{VERS}"
 
 desc 'Publish new release to rubyforge'
 task :release => [ "#{PKGNAME}.gem", "#{PKGNAME}.tar.gz" ] do |t|
   sh <<-end
-    rubyforge add_release wink rpeg-markdown #{VERS} #{PKGNAME}.gem &&
-    rubyforge add_file    wink rpeg-markdown #{VERS} #{PKGNAME}.tar.gz
+    rubyforge add_release wink parkdown #{VERS} #{PKGNAME}.gem &&
+    rubyforge add_file    wink parkdown #{VERS} #{PKGNAME}.tar.gz
   end
 end
