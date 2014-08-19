@@ -1,10 +1,10 @@
 # encoding: utf-8
 Gem::Specification.new do |s|
   s.name = 'parkdown'
-  s.version = '1.4.22'
+  s.version = '1.4.23'
   s.summary = "Fast Markdown implementation"
   s.description = ''
-  s.date = '2014-08-15'
+  s.date = '2014-08-19'
   s.email = 'spam@elephly.net'
   s.homepage = 'http://github.com/rekado/parkdown'
   s.authors = ["Ryan Tomayko", "Rekado"]
