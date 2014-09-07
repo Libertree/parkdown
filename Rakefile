@@ -5,7 +5,7 @@ require 'rubygems/package_task'
 task :default => :test
 
 DLEXT = Config::CONFIG['DLEXT']
-VERS = '1.4.23'
+VERS = '1.4.24'
 
 spec =
   Gem::Specification.new do |s|
