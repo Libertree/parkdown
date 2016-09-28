@@ -1,13 +1,13 @@
 # encoding: utf-8
 Gem::Specification.new do |s|
   s.name = 'parkdown'
-  s.version = '1.4.24'
+  s.version = '1.4.26'
   s.summary = "Fast Markdown implementation"
   s.description = ''
-  s.date = '2014-09-07'
+  s.date = '2016-09-27'
   s.email = 'spam@elephly.net'
-  s.homepage = 'http://github.com/rekado/parkdown'
-  s.authors = ["Ryan Tomayko", "Rekado"]
+  s.homepage = 'http://github.com/Libertree/parkdown'
+  s.authors = ["Ryan Tomayko", "Rekado", "Pistos"]
   s.has_rdoc = true
   # = MANIFEST =
   s.files = %w[
