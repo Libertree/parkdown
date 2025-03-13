@@ -1,4 +1,4 @@
 [submodule "peg-markdown"]
 	path = peg-markdown
-	url = git://github.com/Libertree/peg-markdown.git
-	branch = remove-entities
+        url = https://github.com/Libertree/peg-markdown.git
+	branch = master
