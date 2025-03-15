@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.authors = ['Ryan Tomayko', 'Rekado', 'Pistos']
   s.bindir = 'bin'
-  s.date = '2025-03-12'
+  s.date = '2025-03-15'
   s.description = ''
   s.email = 'spam@elephly.net'
   s.executables = ['parkdown']
@@ -12,10 +12,10 @@ Gem::Specification.new do |s|
   s.licenses = ['GPL-2.0-or-later']
   s.name = 'parkdown'
   s.require_paths = ['lib']
-  s.required_ruby_version = '>= 2.7.0'
+  s.required_ruby_version = '>= 3.0.0'
   s.summary = 'Fast Markdown implementation'
   s.test_files = ['test/markdown_test.rb']
-  s.version = '1.4.29'
+  s.version = '1.4.31'
 
   # = MANIFEST =
   s.files = %w[

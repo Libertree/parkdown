@@ -5,7 +5,7 @@ require 'rubygems/package_task'
 task :default => :test
 
 DLEXT = RbConfig::CONFIG['DLEXT']
-VERS = '1.4.29'
+VERS = '1.4.31'
 
 spec =
   Gem::Specification.new do |s|
@@ -63,12 +63,19 @@ end
 desc 'Gather required peg-markdown sources into extension directory'
 task :gather => 'submodule:exist' do |t|
   sh 'cd peg-markdown && make markdown_parser.c'
-  files =
-    FileList[
-      'peg-markdown/markdown_{peg.h,parser.c,output.c,lib.c,lib.h}',
-      'peg-markdown/{utility,parsing}_functions.c',
-      'peg-markdown/{utility,parsing}_functions.h'
-    ]
+  files = FileList[
+    'peg-markdown/markdown_lib.c',
+    'peg-markdown/markdown_lib.h',
+    'peg-markdown/markdown_output.c',
+    'peg-markdown/markdown_parser.c',
+    'peg-markdown/markdown_peg.h',
+    'peg-markdown/odf.c',
+    'peg-markdown/odf.h',
+    'peg-markdown/parsing_functions.c',
+    'peg-markdown/parsing_functions.h',
+    'peg-markdown/utility_functions.c',
+    'peg-markdown/utility_functions.h',
+  ]
   cp files, 'ext/',
     :preserve => true,
     :verbose => true
